@@ -40570,7 +40570,7 @@
             },
             "FN_FAL_RECYCLER_3": {
                 "item": "minecraft:purple_stained_glass",
-                "nbt": "{PublicBukkitValues:{\"slimefun:slimefun_item\":\"FN_FAL_RECYCLER_3\"},display:{Lore:[\u0027{\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"yellow\",\"text\":\"A machinery that can recycle\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"yellow\",\"text\":\"items to that of in lower form\"}],\"text\":\"\"}\u0027,\u0027{\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":true,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"light_purple\",\"text\":\"FN Machinery\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_red\",\"text\":\"End-Game Machine\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_gray\",\"text\":\"⇨ \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"⚡ \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"Speed: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"2.0x\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_gray\",\"text\":\"⇨ \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"⚡ \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"672 J/s\"}],\"text\":\"\"}\u0027],Name:\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"light_purple\",\"text\":\"FN Electric Recycler III\"}],\"text\":\"\"}\u0027 }}"
+                "nbt": "{PublicBukkitValues:{\"slimefun:slimefun_item\":\"FN_FAL_RECYCLER_3\"},display:{Lore:[\u0027{\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"yellow\",\"text\":\"A machinery that can recycle\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"yellow\",\"text\":\"items to that of in lower form\"}],\"text\":\"\"}\u0027,\u0027{\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":true,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"light_purple\",\"text\":\"FN Machinery\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_red\",\"text\":\"End-Game Machine\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_gray\",\"text\":\"⇨ \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"⚡ \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"Speed: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"4.0x\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_gray\",\"text\":\"⇨ \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"⚡ \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"672 J/s\"}],\"text\":\"\"}\u0027],Name:\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"light_purple\",\"text\":\"FN Electric Recycler III\"}],\"text\":\"\"}\u0027 }}"
             },
             "FN_FAL_TRANSFORMER_1": {
                 "item": "minecraft:blue_glazed_terracotta",
@@ -41211,7 +41211,7 @@
                 }, {
                     "inputs": [
                         "FN_MACHINERY_POWER_COMPONENT:1",
-                        "IRIDIUM:3",
+                        "TIN_INGOT:3",
                         "FN_MACHINERY_POWER_COMPONENT:1",
                         "FN_MACHINERY_BASIC_MACHINE_BLOCK:1",
                         "SOLAR_GENERATOR_4:1",
@@ -41227,7 +41227,7 @@
                         "FN_POWER_XPANSION_POWER_R1:1",
                         "FN_MACHINERY_POWER_COMPONENT:1",
                         "FN_MACHINERY_BASIC_MACHINE_BLOCK:1",
-                        "IRIDIUM:3",
+                        "TIN_INGOT:3",
                         "FN_MACHINERY_BASIC_MACHINE_BLOCK:1",
                         "BASIC_CIRCUIT_BOARD:1",
                         "FN_MACHINERY_ALUMINUM_PLATING:1",
@@ -41240,7 +41240,7 @@
                         "FN_POWER_XPANSION_POWER_R2:1",
                         "FN_MACHINERY_POWER_COMPONENT:1",
                         "FN_MACHINERY_BASIC_MACHINE_BLOCK:1",
-                        "IRIDIUM:3",
+                        "TIN_INGOT:3",
                         "FN_MACHINERY_BASIC_MACHINE_BLOCK:1",
                         "BASIC_CIRCUIT_BOARD:1",
                         "FN_MACHINERY_ALUMINUM_PLATING:1",
@@ -41253,7 +41253,7 @@
                         "FN_POWER_XPANSION_POWER_R3:1",
                         "FN_MACHINERY_POWER_COMPONENT:1",
                         "FN_MACHINERY_BASIC_MACHINE_BLOCK:1",
-                        "IRIDIUM:6",
+                        "TIN_INGOT:6",
                         "FN_MACHINERY_BASIC_MACHINE_BLOCK:1",
                         "ADVANCED_CIRCUIT_BOARD:1",
                         "FN_MACHINERY_GOLD_PLATING:1",
@@ -41266,7 +41266,7 @@
                         "FN_POWER_XPANSION_POWER_R4:1",
                         "FN_MACHINERY_POWER_COMPONENT:1",
                         "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK:1",
-                        "IRIDIUM:6",
+                        "TIN_INGOT:6",
                         "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK:1",
                         "FN_FAL_GENERATOR_TIER1:1",
                         "FN_MACHINERY_GOLD_PLATING:1",
@@ -41279,7 +41279,7 @@
                         "FN_POWER_XPANSION_POWER_R5:1",
                         "FN_MACHINERY_GEAR_PART:1",
                         "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK:1",
-                        "IRIDIUM:8",
+                        "TIN_INGOT:8",
                         "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK:1",
                         "FN_FAL_GENERATOR_TIER2:1",
                         "FN_MACHINERY_GOLD_PLATING:1",
@@ -41292,7 +41292,7 @@
                         "FN_POWER_XPANSION_POWER_R6:1",
                         "FN_MACHINERY_GEAR_PART:1",
                         "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK:1",
-                        "IRIDIUM:13",
+                        "TIN_INGOT:13",
                         "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK:1",
                         "FN_FAL_GENERATOR_TIER3:1",
                         "FN_MACHINERY_BRASS_PLATING:1",
@@ -41305,7 +41305,7 @@
                         "FN_POWER_XPANSION_POWER_R7:1",
                         "FN_MACHINERY_GEAR_PART:1",
                         "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK:1",
-                        "IRIDIUM:13",
+                        "TIN_INGOT:13",
                         "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK:1",
                         "BLISTERING_INGOT_2:1",
                         "FN_FAL_GENERATOR_TIER4:1",
@@ -41318,7 +41318,7 @@
                         "FN_POWER_XPANSION_POWER_R8:1",
                         "FN_MACHINERY_GEAR_PART:1",
                         "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK:1",
-                        "IRIDIUM:16",
+                        "TIN_INGOT:16",
                         "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK:1",
                         "REINFORCED_ALLOY_INGOT:1",
                         "FN_FAL_GENERATOR_TIER5:1",
@@ -41331,7 +41331,7 @@
                         "FN_POWER_XPANSION_POWER_R9:1",
                         "FN_MACHINERY_GEAR_PART:1",
                         "ENERGIZED_CAPACITOR:1",
-                        "IRIDIUM:16",
+                        "TIN_INGOT:16",
                         "ENERGIZED_CAPACITOR:1",
                         "URANIUM:1",
                         "FN_FAL_GENERATOR_TIER6:1",
@@ -41344,7 +41344,7 @@
                         "FN_POWER_XPANSION_POWER_R10:1",
                         "FN_MACHINERY_GEAR_PART:1",
                         "ENERGIZED_CAPACITOR:1",
-                        "IRIDIUM:20",
+                        "TIN_INGOT:20",
                         "ENERGIZED_CAPACITOR:1",
                         "NEPTUNIUM:1",
                         "FN_FAL_GENERATOR_TIER7:1",
@@ -41357,7 +41357,7 @@
                         "FN_POWER_XPANSION_POWER_R11:1",
                         "FN_MACHINERY_GEAR_PART:1",
                         "ENERGIZED_CAPACITOR:1",
-                        "IRIDIUM:20",
+                        "TIN_INGOT:20",
                         "ENERGIZED_CAPACITOR:1",
                         "FN_MACHINERY_REINFORCED_CASING:1",
                         "FN_POWER_XPANSION_POWER_R5:1",
@@ -43481,6 +43481,1244 @@
                     ],
                     "outputs": ["FN_FAL_GENERATOR_TIER8:1"]
                 }
+            ],
+            "FMG_GENERATOR_CLAY": [
+                {
+                    "outputs": ["clay_block:1"],
+                    "time": 320
+                }
+            ],
+            "FMG_GENERATOR_WARPED": [
+                {
+                    "outputs": ["warped_nylium:1"],
+                    "time": 480
+                }
+            ],
+            "FMG_GENERATOR_TERRACOTTA": [
+                {
+                    "outputs": ["terracotta:1"],
+                    "time": 840
+                }
+            ],
+            "FMG_GENERATOR_BONE": [
+                {
+                    "outputs": ["bone:1"],
+                    "time": 2560
+                }
+            ],
+            "FMG_GENERATOR_DIAMOND": [
+                {
+                    "outputs": ["diamond:1"],
+                    "time": 1920
+                }
+            ],
+            "FMG_GENERATOR_EMERALD": [
+                {
+                    "outputs": ["emerald:1"],
+                    "time": 2180
+                }
+            ],
+            "FMG_GENERATOR_DIRT": [
+                {
+                    "outputs": ["dirt:1"],
+                    "time": 120
+                }
+            ],
+            "FMG_GENERATOR_HONEYCOMB": [
+                {
+                    "outputs": ["honeycomb:1"],
+                    "time": 480
+                }
+            ],
+            "FMG_GENERATOR_QUARTZ": [
+                {
+                    "outputs": ["quartz:1"],
+                    "time": 280
+                }
+            ],
+            "FMG_GENERATOR_AMETHYST": [
+                {
+                    "outputs": ["amethyst_cluster:1"],
+                    "time": 1600
+                }
+            ],
+            "FN_FAL_TRANSFORMER_1": [
+                {
+                    "inputs": ["AUTO_ENCHANTER:1", "CARBONADO:6"],
+                    "outputs": ["AUTO_ENCHANTER_2:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["AUTO_DISENCHANTER:1", "CARBONADO:8"],
+                    "outputs": ["AUTO_DISENCHANTER_2:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["AUTO_ANVIL:1", "ELECTRIC_MOTOR:12"],
+                    "outputs": ["AUTO_ANVIL_2:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["ELECTRO_MAGNET:3", "BRONZE_INGOT:4"],
+                    "outputs": ["CARGO_NODE:4"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["CARGO_NODE:1", "hopper:2"],
+                    "outputs": ["CARGO_NODE_INPUT:2"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["CARGO_NODE_OUTPUT:1", "CARGO_MOTOR:2"],
+                    "outputs": ["CARGO_NODE_OUTPUT_ADVANCED:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["PROGRAMMABLE_ANDROID:1", "ANDROID_MEMORY_CORE:2"],
+                    "outputs": ["PROGRAMMABLE_ANDROID_2:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["PROGRAMMABLE_ANDROID_2:1", "ANDROID_MEMORY_CORE:4"],
+                    "outputs": ["PROGRAMMABLE_ANDROID_3:1"],
+                    "time": 160,
+                    "energy": -2048
+                }
+            ],
+            "FN_FAL_TRANSFORMER_2": [
+                {
+                    "inputs": ["AUTO_ENCHANTER:1", "CARBONADO:6"],
+                    "outputs": ["AUTO_ENCHANTER_2:1"],
+                    "time": 80,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["AUTO_DISENCHANTER:1", "CARBONADO:8"],
+                    "outputs": ["AUTO_DISENCHANTER_2:1"],
+                    "time": 80,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["AUTO_ANVIL:1", "ELECTRIC_MOTOR:12"],
+                    "outputs": ["AUTO_ANVIL_2:1"],
+                    "time": 80,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["ELECTRO_MAGNET:3", "BRONZE_INGOT:4"],
+                    "outputs": ["CARGO_NODE:4"],
+                    "time": 80,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["CARGO_NODE:1", "hopper:2"],
+                    "outputs": ["CARGO_NODE_INPUT:2"],
+                    "time": 80,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["CARGO_NODE_OUTPUT:1", "CARGO_MOTOR:2"],
+                    "outputs": ["CARGO_NODE_OUTPUT_ADVANCED:1"],
+                    "time": 80,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["PROGRAMMABLE_ANDROID:1", "ANDROID_MEMORY_CORE:2"],
+                    "outputs": ["PROGRAMMABLE_ANDROID_2:1"],
+                    "time": 80,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["PROGRAMMABLE_ANDROID_2:1", "ANDROID_MEMORY_CORE:4"],
+                    "outputs": ["PROGRAMMABLE_ANDROID_3:1"],
+                    "time": 80,
+                    "energy": -1536
+                }
+            ],
+            "FN_FAL_TRANSFORMER_3": [
+                {
+                    "inputs": ["AUTO_ENCHANTER:1", "CARBONADO:6"],
+                    "outputs": ["AUTO_ENCHANTER_2:1"],
+                    "time": 40,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["AUTO_DISENCHANTER:1", "CARBONADO:8"],
+                    "outputs": ["AUTO_DISENCHANTER_2:1"],
+                    "time": 40,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["AUTO_ANVIL:1", "ELECTRIC_MOTOR:12"],
+                    "outputs": ["AUTO_ANVIL_2:1"],
+                    "time": 40,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["ELECTRO_MAGNET:3", "BRONZE_INGOT:4"],
+                    "outputs": ["CARGO_NODE:4"],
+                    "time": 40,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["CARGO_NODE:1", "hopper:2"],
+                    "outputs": ["CARGO_NODE_INPUT:2"],
+                    "time": 40,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["CARGO_NODE_OUTPUT:1", "CARGO_MOTOR:2"],
+                    "outputs": ["CARGO_NODE_OUTPUT_ADVANCED:1"],
+                    "time": 40,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["PROGRAMMABLE_ANDROID:1", "ANDROID_MEMORY_CORE:2"],
+                    "outputs": ["PROGRAMMABLE_ANDROID_2:1"],
+                    "time": 40,
+                    "energy": -1536
+                },
+                {
+                    "inputs": ["PROGRAMMABLE_ANDROID_2:1", "ANDROID_MEMORY_CORE:4"],
+                    "outputs": ["PROGRAMMABLE_ANDROID_3:1"],
+                    "time": 40,
+                    "energy": -1536
+                }
+            ],
+            "FN_FAL_RECYCLER_1": [
+                {
+                    "inputs": ["URANIUM:1"],
+                    "outputs": ["SMALL_URANIUM:4"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["NEPTUNIUM:1"],
+                    "outputs": ["URANIUM:48"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["BOOSTED_URANIUM:1"],
+                    "outputs": ["NEPTUNIUM:2"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_24K:1"],
+                    "outputs": ["GOLD_22K:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_22K:1"],
+                    "outputs": ["GOLD_20K:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_20K:1"],
+                    "outputs": ["GOLD_18K:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_18K:1"],
+                    "outputs": ["GOLD_16K:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_16K:1"],
+                    "outputs": ["GOLD_14K:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_14K:1"],
+                    "outputs": ["GOLD_12K:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_12K:1"],
+                    "outputs": ["GOLD_10K:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_10K:1"],
+                    "outputs": ["GOLD_8K:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_8K:1"],
+                    "outputs": ["GOLD_6K:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_6K:1"],
+                    "outputs": ["GOLD_4K:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_4K:1"],
+                    "outputs": ["GOLD_DUST:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["BLISTERING_INGOT_3:1"],
+                    "outputs": ["BLISTERING_INGOT_2:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["BLISTERING_INGOT_2:1"],
+                    "outputs": ["BLISTERING_INGOT:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["MAGIC_LUMP_3:1"],
+                    "outputs": ["MAGIC_LUMP_2:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["MAGIC_LUMP_2:1"],
+                    "outputs": ["MAGIC_LUMP_1:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["ENDER_LUMP_3:1"],
+                    "outputs": ["ENDER_LUMP_2:1"],
+                    "time": 240,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["ENDER_LUMP_2:1"],
+                    "outputs": ["ENDER_LUMP_1:1"],
+                    "time": 240,
+                    "energy": -2016
+                }
+            ],
+            "FN_FAL_RECYCLER_2": [
+                {
+                    "inputs": ["URANIUM:1"],
+                    "outputs": ["SMALL_URANIUM:4"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["NEPTUNIUM:1"],
+                    "outputs": ["URANIUM:48"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["BOOSTED_URANIUM:1"],
+                    "outputs": ["NEPTUNIUM:2"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_24K:1"],
+                    "outputs": ["GOLD_22K:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_22K:1"],
+                    "outputs": ["GOLD_20K:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_20K:1"],
+                    "outputs": ["GOLD_18K:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_18K:1"],
+                    "outputs": ["GOLD_16K:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_16K:1"],
+                    "outputs": ["GOLD_14K:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_14K:1"],
+                    "outputs": ["GOLD_12K:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_12K:1"],
+                    "outputs": ["GOLD_10K:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_10K:1"],
+                    "outputs": ["GOLD_8K:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_8K:1"],
+                    "outputs": ["GOLD_6K:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_6K:1"],
+                    "outputs": ["GOLD_4K:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_4K:1"],
+                    "outputs": ["GOLD_DUST:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["BLISTERING_INGOT_3:1"],
+                    "outputs": ["BLISTERING_INGOT_2:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["BLISTERING_INGOT_2:1"],
+                    "outputs": ["BLISTERING_INGOT:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["MAGIC_LUMP_3:1"],
+                    "outputs": ["MAGIC_LUMP_2:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["MAGIC_LUMP_2:1"],
+                    "outputs": ["MAGIC_LUMP_1:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["ENDER_LUMP_3:1"],
+                    "outputs": ["ENDER_LUMP_2:1"],
+                    "time": 120,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["ENDER_LUMP_2:1"],
+                    "outputs": ["ENDER_LUMP_1:1"],
+                    "time": 120,
+                    "energy": -2016
+                }
+            ],
+            "FN_FAL_RECYCLER_3": [
+                {
+                    "inputs": ["URANIUM:1"],
+                    "outputs": ["SMALL_URANIUM:4"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["NEPTUNIUM:1"],
+                    "outputs": ["URANIUM:48"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["BOOSTED_URANIUM:1"],
+                    "outputs": ["NEPTUNIUM:2"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_24K:1"],
+                    "outputs": ["GOLD_22K:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_22K:1"],
+                    "outputs": ["GOLD_20K:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_20K:1"],
+                    "outputs": ["GOLD_18K:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_18K:1"],
+                    "outputs": ["GOLD_16K:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_16K:1"],
+                    "outputs": ["GOLD_14K:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_14K:1"],
+                    "outputs": ["GOLD_12K:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_12K:1"],
+                    "outputs": ["GOLD_10K:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_10K:1"],
+                    "outputs": ["GOLD_8K:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_8K:1"],
+                    "outputs": ["GOLD_6K:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_6K:1"],
+                    "outputs": ["GOLD_4K:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["GOLD_4K:1"],
+                    "outputs": ["GOLD_DUST:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["BLISTERING_INGOT_3:1"],
+                    "outputs": ["BLISTERING_INGOT_2:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["BLISTERING_INGOT_2:1"],
+                    "outputs": ["BLISTERING_INGOT:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["MAGIC_LUMP_3:1"],
+                    "outputs": ["MAGIC_LUMP_2:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["MAGIC_LUMP_2:1"],
+                    "outputs": ["MAGIC_LUMP_1:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["ENDER_LUMP_3:1"],
+                    "outputs": ["ENDER_LUMP_2:1"],
+                    "time": 60,
+                    "energy": -2016
+                },
+                {
+                    "inputs": ["ENDER_LUMP_2:1"],
+                    "outputs": ["ENDER_LUMP_1:1"],
+                    "time": 60,
+                    "energy": -2016
+                }
+            ],
+            "FN_FAL_DOWNGRADER": [
+                {
+                    "inputs": ["ELECTRIC_GOLD_PAN_3:1"],
+                    "outputs": ["ELECTRIC_GOLD_PAN_2:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_GOLD_PAN_2:1"],
+                    "outputs": ["ELECTRIC_GOLD_PAN:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_SMELTERY_2:1"],
+                    "outputs": ["ELECTRIC_SMELTERY:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_INGOT_FACTORY_3:1"],
+                    "outputs": ["ELECTRIC_INGOT_FACTORY_2:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_INGOT_FACTORY_2:1"],
+                    "outputs": ["ELECTRIC_INGOT_FACTORY:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_DUST_WASHER_3:1"],
+                    "outputs": ["ELECTRIC_DUST_WASHER_2:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_DUST_WASHER_2:1"],
+                    "outputs": ["ELECTRIC_DUST_WASHER:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_ORE_GRINDER_3:1"],
+                    "outputs": ["ELECTRIC_ORE_GRINDER_2:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_ORE_GRINDER_2:1"],
+                    "outputs": ["ELECTRIC_ORE_GRINDER:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_FURNACE_3:1"],
+                    "outputs": ["ELECTRIC_FURNACE_2:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_FURNACE_2:1"],
+                    "outputs": ["ELECTRIC_FURNACE:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["HEATED_PRESSURE_CHAMBER_2:1"],
+                    "outputs": ["HEATED_PRESSURE_CHAMBER:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIFIED_CRUCIBLE_3:1"],
+                    "outputs": ["ELECTRIFIED_CRUCIBLE_2:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIFIED_CRUCIBLE_2:1"],
+                    "outputs": ["ELECTRIFIED_CRUCIBLE:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["CARBON_PRESS_3:1"],
+                    "outputs": ["CARBON_PRESS_2:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["CARBON_PRESS_2:1"],
+                    "outputs": ["CARBON_PRESS:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["FREEZER_3:1"],
+                    "outputs": ["FREEZER_2:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["FREEZER_2:1"],
+                    "outputs": ["FREEZER:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["FOOD_FABRICATOR_2:1"],
+                    "outputs": ["FOOD_FABRICATOR:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["LAVA_GENERATOR_2:1"],
+                    "outputs": ["LAVA_GENERATOR:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["COAL_GENERATOR_2:1"],
+                    "outputs": ["COAL_GENERATOR:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                },
+                {
+                    "inputs": ["ELECTRIC_PRESS_2:1"],
+                    "outputs": ["ELECTRIC_PRESS:1", "FN_METAL_SCRAPS:1"],
+                    "time": 100,
+                    "energy": -7500
+                }
+            ],
+            "FN_FAL_CONDENSER_1": [
+                {
+                    "inputs": ["GOLD_10K:1", "GOLD_14K:1"],
+                    "outputs": ["GOLD_24K:1"],
+                    "time": 240,
+                    "energy": -3072
+                },
+                {
+                    "inputs": ["BLISTERING_INGOT:1", "URANIUM:9"],
+                    "outputs": ["BLISTERING_INGOT_3:1"],
+                    "time": 240,
+                    "energy": -3072
+                },
+                {
+                    "inputs": ["DAMASCUS_STEEL_INGOT:2", "COMPRESSED_CARBON:1"],
+                    "outputs": ["HARDENED_METAL_INGOT:1"],
+                    "time": 240,
+                    "energy": -3072
+                },
+                {
+                    "inputs": ["STEEL_INGOT:2", "CARBON:1"],
+                    "outputs": ["DAMASCUS_STEEL_INGOT:2"],
+                    "time": 240,
+                    "energy": -3072
+                },
+                {
+                    "inputs": ["BRONZE_INGOT:1", "copper_ingot:2"],
+                    "outputs": ["CORINTHIAN_BRONZE_INGOT:1"],
+                    "time": 240,
+                    "energy": -3072
+                },
+                {
+                    "inputs": ["iron_ingot:1", "copper_ingot:2"],
+                    "outputs": ["NICKEL_INGOT:1"],
+                    "time": 240,
+                    "energy": -3072
+                },
+                {
+                    "inputs": ["NICKEL_INGOT:1", "copper_ingot:2"],
+                    "outputs": ["COBALT_INGOT:1"],
+                    "time": 240,
+                    "energy": -3072
+                },
+                {
+                    "inputs": ["ALUMINUM_INGOT:1", "copper_ingot:2"],
+                    "outputs": ["DURALUMIN_INGOT:1"],
+                    "time": 240,
+                    "energy": -3072
+                },
+                {
+                    "inputs": ["ALUMINUM_INGOT:1", "BRONZE_INGOT:1"],
+                    "outputs": ["CORINTHIAN_BRONZE_INGOT:1"],
+                    "time": 240,
+                    "energy": -3072
+                },
+                {
+                    "inputs": ["ALUMINUM_INGOT:1", "BRASS_INGOT:1"],
+                    "outputs": ["ALUMINUM_BRASS_INGOT:1"],
+                    "time": 240,
+                    "energy": -3072
+                }
+            ],
+            "FN_FAL_CONDENSER_2": [
+                {
+                    "inputs": ["GOLD_10K:1", "GOLD_14K:1"],
+                    "outputs": ["GOLD_24K:1"],
+                    "time": 120,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["BLISTERING_INGOT:1", "URANIUM:9"],
+                    "outputs": ["BLISTERING_INGOT_3:1"],
+                    "time": 120,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["DAMASCUS_STEEL_INGOT:2", "COMPRESSED_CARBON:1"],
+                    "outputs": ["HARDENED_METAL_INGOT:1"],
+                    "time": 120,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["STEEL_INGOT:2", "CARBON:1"],
+                    "outputs": ["DAMASCUS_STEEL_INGOT:2"],
+                    "time": 120,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["BRONZE_INGOT:1", "copper_ingot:2"],
+                    "outputs": ["CORINTHIAN_BRONZE_INGOT:1"],
+                    "time": 120,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["iron_ingot:1", "copper_ingot:2"],
+                    "outputs": ["NICKEL_INGOT:1"],
+                    "time": 120,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["NICKEL_INGOT:1", "copper_ingot:2"],
+                    "outputs": ["COBALT_INGOT:1"],
+                    "time": 120,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["ALUMINUM_INGOT:1", "copper_ingot:2"],
+                    "outputs": ["DURALUMIN_INGOT:1"],
+                    "time": 120,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["ALUMINUM_INGOT:1", "BRONZE_INGOT:1"],
+                    "outputs": ["CORINTHIAN_BRONZE_INGOT:1"],
+                    "time": 120,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["ALUMINUM_INGOT:1", "BRASS_INGOT:1"],
+                    "outputs": ["ALUMINUM_BRASS_INGOT:1"],
+                    "time": 120,
+                    "energy": -2304
+                }
+            ],
+            "FN_FAL_CONDENSER_3": [
+                {
+                    "inputs": ["GOLD_10K:1", "GOLD_14K:1"],
+                    "outputs": ["GOLD_24K:1"],
+                    "time": 60,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["BLISTERING_INGOT:1", "URANIUM:9"],
+                    "outputs": ["BLISTERING_INGOT_3:1"],
+                    "time": 60,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["DAMASCUS_STEEL_INGOT:2", "COMPRESSED_CARBON:1"],
+                    "outputs": ["HARDENED_METAL_INGOT:1"],
+                    "time": 60,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["STEEL_INGOT:2", "CARBON:1"],
+                    "outputs": ["DAMASCUS_STEEL_INGOT:2"],
+                    "time": 60,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["BRONZE_INGOT:1", "copper_ingot:2"],
+                    "outputs": ["CORINTHIAN_BRONZE_INGOT:1"],
+                    "time": 60,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["iron_ingot:1", "copper_ingot:2"],
+                    "outputs": ["NICKEL_INGOT:1"],
+                    "time": 60,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["NICKEL_INGOT:1", "copper_ingot:2"],
+                    "outputs": ["COBALT_INGOT:1"],
+                    "time": 60,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["ALUMINUM_INGOT:1", "copper_ingot:2"],
+                    "outputs": ["DURALUMIN_INGOT:1"],
+                    "time": 60,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["ALUMINUM_INGOT:1", "BRONZE_INGOT:1"],
+                    "outputs": ["CORINTHIAN_BRONZE_INGOT:1"],
+                    "time": 60,
+                    "energy": -2304
+                },
+                {
+                    "inputs": ["ALUMINUM_INGOT:1", "BRASS_INGOT:1"],
+                    "outputs": ["ALUMINUM_BRASS_INGOT:1"],
+                    "time": 60,
+                    "energy": -2304
+                }
+            ],
+            "FN_FAL_COMPRESSOR_1": [
+                {
+                    "inputs": ["REINFORCED_ALLOY_INGOT:8"],
+                    "outputs": ["REINFORCED_PLATE:1"],
+                    "time": 320,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["STEEL_INGOT:8"],
+                    "outputs": ["STEEL_PLATE:1"],
+                    "time": 320,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["coal_block:11"],
+                    "outputs": ["CARBON:12"],
+                    "time": 320,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["coal:8"],
+                    "outputs": ["CARBON:1"],
+                    "time": 320,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["charcoal:4"],
+                    "outputs": ["coal:1"],
+                    "time": 320,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["SMALL_URANIUM:4"],
+                    "outputs": ["URANIUM:1"],
+                    "time": 320,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["URANIUM:64"],
+                    "outputs": ["NEPTUN:1"],
+                    "time": 320,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["MAGNESIUM_SALT:8"],
+                    "outputs": ["MAGNESIUM_DUST:1"],
+                    "time": 320,
+                    "energy": -2048
+                }
+            ],
+            "FN_FAL_COMPRESSOR_2": [
+                {
+                    "inputs": ["REINFORCED_ALLOY_INGOT:8"],
+                    "outputs": ["REINFORCED_PLATE:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["STEEL_INGOT:8"],
+                    "outputs": ["STEEL_PLATE:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["coal_block:11"],
+                    "outputs": ["CARBON:12"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["coal:8"],
+                    "outputs": ["CARBON:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["charcoal:4"],
+                    "outputs": ["coal:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["SMALL_URANIUM:4"],
+                    "outputs": ["URANIUM:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["URANIUM:64"],
+                    "outputs": ["NEPTUN:1"],
+                    "time": 160,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["MAGNESIUM_SALT:8"],
+                    "outputs": ["MAGNESIUM_DUST:1"],
+                    "time": 160,
+                    "energy": -2048
+                }
+            ],
+            "FN_FAL_COMPRESSOR_3": [
+                {
+                    "inputs": ["REINFORCED_ALLOY_INGOT:8"],
+                    "outputs": ["REINFORCED_PLATE:1"],
+                    "time": 80,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["STEEL_INGOT:8"],
+                    "outputs": ["STEEL_PLATE:1"],
+                    "time": 80,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["coal_block:11"],
+                    "outputs": ["CARBON:12"],
+                    "time": 80,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["coal:8"],
+                    "outputs": ["CARBON:1"],
+                    "time": 80,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["charcoal:4"],
+                    "outputs": ["coal:1"],
+                    "time": 80,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["SMALL_URANIUM:4"],
+                    "outputs": ["URANIUM:1"],
+                    "time": 80,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["URANIUM:64"],
+                    "outputs": ["NEPTUN:1"],
+                    "time": 80,
+                    "energy": -2048
+                },
+                {
+                    "inputs": ["MAGNESIUM_SALT:8"],
+                    "outputs": ["MAGNESIUM_DUST:1"],
+                    "time": 80,
+                    "energy": -2048
+                }
+            ],
+            "[DAY]FN_FAL_GENERATOR_TIER1": [
+                {
+                    "time": 10,
+                    "energy": 256
+                }
+            ],
+            "[DAY]FN_FAL_GENERATOR_TIER2": [
+                {
+                    "time": 10,
+                    "energy": 512
+                }
+            ],
+            "[DAY]FN_FAL_GENERATOR_TIER3": [
+                {
+                    "time": 10,
+                    "energy": 768
+                }
+            ],
+            "[DAY]FN_FAL_GENERATOR_TIER4": [
+                {
+                    "time": 10,
+                    "energy": 1024
+                }
+            ],
+            "[DAY]FN_FAL_GENERATOR_TIER5": [
+                {
+                    "time": 10,
+                    "energy": 1282
+                }
+            ],
+            "[DAY]FN_FAL_GENERATOR_TIER6": [
+                {
+                    "time": 10,
+                    "energy": 1538
+                }
+            ],
+            "[DAY]FN_FAL_GENERATOR_TIER7": [
+                {
+                    "time": 10,
+                    "energy": 1794
+                }
+            ],
+            "[DAY]FN_FAL_GENERATOR_TIER8": [
+                {
+                    "time": 10,
+                    "energy": 2048
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R1": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 236
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 138
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R2": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 472
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 276
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R3": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 944
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 552
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R4": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 1888
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 1104
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R5": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 3064
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 1784
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R6": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 5224
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 3128
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R7": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 7128
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 5142
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R8": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 9420
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 6752
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R9": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 11384
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 7431
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R10": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 13692
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 8128
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R11": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 15984
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 9462
+                }
+            ],
+            "FN_POWER_XPANSION_POWER_R12": [
+                {
+                    "conditions": ["day"],
+                    "time": 10,
+                    "energy": 17421
+                },
+                {
+                    "conditions": ["night"],
+                    "time": 10,
+                    "energy": 10128
+                }
             ]
         },
         "multiblocks": {
@@ -44006,6 +45244,66 @@
                     "outputs": ["SMG_GENERATOR_SMOOTH_STONE_BROKEN:1"],
                     "energy": -180,
                     "time": 90
+                }
+            ],
+            "SMG_GENERATOR_COBBLESTONE": [
+                {
+                    "outputs": ["cobblestone:1"],
+                    "time": 40
+                }
+            ],
+            "SMG_GENERATOR_STONE": [
+                {
+                    "outputs": ["stone:1"],
+                    "time": 80
+                }
+            ],
+            "SMG_GENERATOR_SMOOTH_STONE": [
+                {
+                    "outputs": ["smooth_stone:1"],
+                    "time": 120
+                }
+            ],
+            "SMG_GENERATOR_GRAVEL": [
+                {
+                    "outputs": ["gravel:1"],
+                    "time": 60
+                }
+            ],
+            "SMG_GENERATOR_SAND": [
+                {
+                    "outputs": ["sand:1"],
+                    "time": 80
+                }
+            ],
+            "SMG_GENERATOR_GLASS": [
+                {
+                    "outputs": ["glass:1"],
+                    "time": 120
+                }
+            ],
+            "SMG_GENERATOR_NETHERRACK": [
+                {
+                    "outputs": ["netherrack:1"],
+                    "time": 60
+                }
+            ],
+            "SMG_GENERATOR_SOUL_SAND": [
+                {
+                    "outputs": ["soul_sand:1"],
+                    "time": 80
+                }
+            ],
+            "SMG_GENERATOR_REDSTONE": [
+                {
+                    "outputs": ["redstone:1"],
+                    "time": 240
+                }
+            ],
+            "SMG_GENERATOR_OBSIDIAN": [
+                {
+                    "outputs": ["obsidian:1"],
+                    "time": 1280
                 }
             ]
         },
