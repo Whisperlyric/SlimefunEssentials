@@ -14391,10 +14391,12 @@
                 "nbt": "{PublicBukkitValues:{\"slimefun:slimefun_item\":\"CARBON_PRESS_3\"},display:{Lore:[\u0027{\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_red\",\"text\":\"End-Game Machine\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_gray\",\"text\":\"⇨ \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"⚡ \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"Speed: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"15.0x\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_gray\",\"text\":\"⇨ \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"⚡ \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"180 J/s\"}],\"text\":\"\"}\u0027],Name:\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"red\",\"text\":\"Carbon Press \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"- \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"III\"}],\"text\":\"\"}\u0027 }}"
             },
             "ELECTRIC_SMELTERY": {
+                "type": "smeltery",
                 "item": "minecraft:furnace",
                 "nbt": "{PublicBukkitValues:{\"slimefun:slimefun_item\":\"ELECTRIC_SMELTERY\"},display:{Lore:[\u0027{\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_red\",\"text\":\"Alloys-Only, doesn\\\u0027t smelt Dust into Ingots\"}],\"text\":\"\"}\u0027,\u0027{\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_red\",\"text\":\"End-Game Machine\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_gray\",\"text\":\"⇨ \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"⚡ \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"Speed: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"1.0x\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_gray\",\"text\":\"⇨ \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"⚡ \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"20 J/s\"}],\"text\":\"\"}\u0027],Name:\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"red\",\"text\":\"Electric Smeltery\"}],\"text\":\"\"}\u0027 }}"
             },
             "ELECTRIC_SMELTERY_2": {
+                "type": "smeltery",
                 "item": "minecraft:furnace",
                 "nbt": "{PublicBukkitValues:{\"slimefun:slimefun_item\":\"ELECTRIC_SMELTERY_2\"},display:{Lore:[\u0027{\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_red\",\"text\":\"Alloys-Only, doesn\\\u0027t smelt Dust into Ingots\"}],\"text\":\"\"}\u0027,\u0027{\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_red\",\"text\":\"End-Game Machine\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_gray\",\"text\":\"⇨ \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"⚡ \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"Speed: \"},{\"italic\":false,\"color\":\"aqua\",\"text\":\"3.0x\"}],\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"dark_gray\",\"text\":\"⇨ \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"⚡ \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"40 J/s\"}],\"text\":\"\"}\u0027],Name:\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"red\",\"text\":\"Electric Smeltery \"},{\"italic\":false,\"color\":\"gray\",\"text\":\"- \"},{\"italic\":false,\"color\":\"yellow\",\"text\":\"II\"}],\"text\":\"\"}\u0027 }}"
             },
@@ -39909,7 +39911,58 @@
                     "energy": -180,
                     "time": 90
                 }
+            ],
+            "KILL": [
+                {
+                    "inputs": ["HEADLESS_HORSEMAN_SPAWN_EGG:1", "entity:skeleton_horse"],
+                    "outputs": ["VILE_PUMPKIN:1"]
+                },
+                {
+                    "inputs": ["PIXIE_QUEEN_SPAWN_EGG:1", "entity:vex"],
+                    "outputs": ["PIXIE_QUEEN_HEART:1"]
+                }
+            ],
+            "SACRIFICIAL_ALTAR": [
+                {
+                    "inputs": [["entity:all"]],
+                    "outputs": ["BLOOD:1"]
+                },
+                {
+                    "inputs": ["entity:rabbit"],
+                    "outputs": ["CURSED_RABBIT_PAW:1"]
+                },
+                {
+                    "inputs": ["player_head:1"],
+                    "outputs": ["HUMAN_SKULL:1"]
+                },
+                {
+                    "inputs": ["entity:tropical_fish"],
+                    "outputs": ["TROPICAL_FISH_SCALE:1"]
+                },
+                {
+                    "inputs": ["entity:fox"],
+                    "outputs": ["POLAR_FOX_HIDE:1"]
+                },
+                {
+                    "inputs": ["entity:magma_cube"],
+                    "outputs": ["MAGMA_ESSENCE:1"]
+                },
+                {
+                    "inputs": ["entity:parrot"],
+                    "outputs": ["PARROT_FEATHER:1"]
+                },
+                {
+                    "inputs": ["entity:wither_skeleton"],
+                    "outputs": ["UNHOLY_WITHER_SKELETON_BONE:1"]
+                }
             ]
+        },
+        "recipe_types": {
+            "SACRIFICIAL_ALTAR": {
+                "type": "process",
+                "nbt": "{display:{Name:'[{\"text\":\"Sacrifical Altar\",\"italic\":false,\"color\":\"dark_red\"}]',Lore:['[{\"text\":\"Kill the entity\",\"italic\":false,\"color\":\"gray\"}]','[{\"text\":\"inside the Sacrificial Altar.\",\"italic\":false,\"color\":\"gray\"}]'] }}",
+                "item": "minecraft:polished_blackstone_bricks"
+            }
         }
     },
     "relics_of_cthonia": {
