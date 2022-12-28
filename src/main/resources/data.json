@@ -26861,6 +26861,14 @@
             }
         },
         "recipes": {
+            "GEO_MINER": [
+                {
+                    "inputs": [],
+                    "outputs": ["CINNABARITE"],
+                    "time": 140,
+                    "energy": -336
+                }
+            ],
             "AIR_COMPRESSOR": [
                 {
                     "inputs": ["EMPTY_CANISTER:1"],
@@ -28046,6 +28054,462 @@
                     "outputs": ["TNTMINIBLOCK:1"]
                 }
             ],
+            "BLOCKEXPANDER": [
+                {
+                    "outputs": ["stone:1"],
+                    "inputs": ["STONEMINIBLOCK:1"]
+                },
+                {
+                    "outputs": ["granite:1"],
+                    "inputs": ["GRANITEMINIBLOCK:1"]
+                },
+                {
+                    "outputs": ["polished_granite:1"],
+                    "inputs": ["POLISHED_GRANITEMINIBLOCK:1"]
+                },
+                {
+                    "outputs": ["diorite:1"],
+                    "inputs": ["DIORITEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["polished_diorite:1"],
+                    "inputs": ["POLISHED_DIORITEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["andesite:1"],
+                    "inputs": ["ANDESITEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["polished_andesite:1"],
+                    "inputs": ["POLISHED_ANDESITEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["deepslate:1"],
+                    "inputs": ["DEEPSLATEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["cobbled_deepslate:1"],
+                    "inputs": ["COBBLED_DEEPSLATEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["polished_deepslate:1"],
+                    "inputs": ["POLISHED_DEEPSLATEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["calcite:1"],
+                    "inputs": ["CALCITEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["tuff:1"],
+                    "inputs": ["TUFFMINIBLOCK:1"]
+                }, {
+                    "outputs": ["dripstone_block:1"],
+                    "inputs": ["DRIPSTONE_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["grass_block:1"],
+                    "inputs": ["GRASS_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["dirt:1"],
+                    "inputs": ["DIRTMINIBLOCK:1"]
+                }, {
+                    "outputs": ["coarse_dirt:1"],
+                    "inputs": ["COARSE_DIRTMINIBLOCK:1"]
+                }, {
+                    "outputs": ["podzol:1"],
+                    "inputs": ["PODZOLMINIBLOCK:1"]
+                }, {
+                    "outputs": ["rooted_dirt:1"],
+                    "inputs": ["ROOTED_DIRTMINIBLOCK:1"]
+                }, {
+                    "outputs": ["crimson_nylium:1"],
+                    "inputs": ["CRIMSON_NYLIUMMINIBLOCK:1"]
+                }, {
+                    "outputs": ["warped_nylium:1"],
+                    "inputs": ["WARPED_NYLIUMMINIBLOCK:1"]
+                }, {
+                    "outputs": ["cobblestone:1"],
+                    "inputs": ["COBBLESTONEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["oak_planks:1"],
+                    "inputs": ["OAK_PLANKSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["spruce_planks:1"],
+                    "inputs": ["SPRUCE_PLANKSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["birch_planks:1"],
+                    "inputs": ["BIRCH_PLANKSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["jungle_planks:1"],
+                    "inputs": ["JUNGLE_PLANKSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["acacia_planks:1"],
+                    "inputs": ["ACACIA_PLANKSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["dark_oak_planks:1"],
+                    "inputs": ["DARK_OAK_PLANKSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["crimson_planks:1"],
+                    "inputs": ["CRIMSON_PLANKSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["warped_planks:1"],
+                    "inputs": ["WARPED_PLANKSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["bedrock:1"],
+                    "inputs": ["BEDROCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["sand:1"],
+                    "inputs": ["SANDMINIBLOCK:1"]
+                }, {
+                    "outputs": ["red_sand:1"],
+                    "inputs": ["RED_SANDMINIBLOCK:1"]
+                }, {
+                    "outputs": ["gravel:1"],
+                    "inputs": ["GRAVELMINIBLOCK:1"]
+                }, {
+                    "outputs": ["coal_ore:1"],
+                    "inputs": ["COAL_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["deepslate_coal_ore:1"],
+                    "inputs": ["DEEPSLATE_COAL_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["iron_ore:1"],
+                    "inputs": ["IRON_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["deepslate_iron_ore:1"],
+                    "inputs": ["DEEPSLATE_IRON_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["copper_ore:1"],
+                    "inputs": ["COPPER_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["deepslate_copper_ore:1"],
+                    "inputs": ["DEEPSLATE_COPPER_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["gold_ore:1"],
+                    "inputs": ["GOLD_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["deepslate_gold_ore:1"],
+                    "inputs": ["DEEPSLATE_GOLD_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["redstone_ore:1"],
+                    "inputs": ["REDSTONE_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["deepslate_redstone_ore:1"],
+                    "inputs": ["DEEPSLATE_REDSTONE_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["emerald_ore:1"],
+                    "inputs": ["EMERALD_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["deepslate_emerald_ore:1"],
+                    "inputs": ["DEEPSLATE_EMERALD_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["lapis_ore:1"],
+                    "inputs": ["LAPIS_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["deepslate_lapis_ore:1"],
+                    "inputs": ["DEEPSLATE_LAPIS_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["diamond_ore:1"],
+                    "inputs": ["DIAMOND_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["deepslate_diamond_ore:1"],
+                    "inputs": ["DEEPSLATE_DIAMOND_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["nether_gold_ore:1"],
+                    "inputs": ["NETHER_GOLD_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["nether_quartz_ore:1"],
+                    "inputs": ["NETHER_QUARTZ_OREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["ancient_debris:1"],
+                    "inputs": ["ANCIENT_DEBRISMINIBLOCK:1"]
+                }, {
+                    "outputs": ["coal_block:1"],
+                    "inputs": ["COAL_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["raw_iron_block:1"],
+                    "inputs": ["RAW_IRON_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["raw_copper_block:1"],
+                    "inputs": ["RAW_COPPER_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["raw_gold_block:1"],
+                    "inputs": ["RAW_GOLD_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["amethyst_block:1"],
+                    "inputs": ["AMETHYST_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["budding_amethyst:1"],
+                    "inputs": ["BUDDING_AMETHYSTMINIBLOCK:1"]
+                }, {
+                    "outputs": ["iron_block:1"],
+                    "inputs": ["IRON_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["copper_block:1"],
+                    "inputs": ["COPPER_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["gold_block:1"],
+                    "inputs": ["GOLD_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["diamond_block:1"],
+                    "inputs": ["DIAMOND_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["netherite_block:1"],
+                    "inputs": ["NETHERITE_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["exposed_copper:1"],
+                    "inputs": ["EXPOSED_COPPERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["weathered_copper:1"],
+                    "inputs": ["WEATHERED_COPPERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["oxidized_copper:1"],
+                    "inputs": ["OXIDIZED_COPPERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["cut_copper:1"],
+                    "inputs": ["CUT_COPPERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["exposed_cut_copper:1"],
+                    "inputs": ["EXPOSED_CUT_COPPERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["weathered_cut_copper:1"],
+                    "inputs": ["WEATHERED_CUT_COPPERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["oxidized_cut_copper:1"],
+                    "inputs": ["OXIDIZED_CUT_COPPERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["oak_log:1"],
+                    "inputs": ["OAK_LOGMINIBLOCK:1"]
+                }, {
+                    "outputs": ["spruce_log:1"],
+                    "inputs": ["SPRUCE_LOGMINIBLOCK:1"]
+                }, {
+                    "outputs": ["birch_log:1"],
+                    "inputs": ["BIRCH_LOGMINIBLOCK:1"]
+                }, {
+                    "outputs": ["jungle_log:1"],
+                    "inputs": ["JUNGLE_LOGMINIBLOCK:1"]
+                }, {
+                    "outputs": ["acacia_log:1"],
+                    "inputs": ["ACACIA_LOGMINIBLOCK:1"]
+                }, {
+                    "outputs": ["dark_oak_log:1"],
+                    "inputs": ["DARK_OAK_LOGMINIBLOCK:1"]
+                }, {
+                    "outputs": ["crimson_stem:1"],
+                    "inputs": ["CRIMSON_STEMMINIBLOCK:1"]
+                }, {
+                    "outputs": ["warped_stem:1"],
+                    "inputs": ["WARPED_STEMMINIBLOCK:1"]
+                }, {
+                    "outputs": ["beacon:1"],
+                    "inputs": ["BEACONMINIBLOCK:1"]
+                }, {
+                    "outputs": ["structure_void:1"],
+                    "inputs": ["STRUCTURE_VOIDMINIBLOCK:1"]
+                }, {
+                    "outputs": ["barrier:1"],
+                    "inputs": ["BARRIERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["glowstone:1"],
+                    "inputs": ["GLOWSTONEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["soul_sand:1"],
+                    "inputs": ["SOUL_SANDMINIBLOCK:1"]
+                }, {
+                    "outputs": ["soul_soil:1"],
+                    "inputs": ["SOUL_SOILMINIBLOCK:1"]
+                }, {
+                    "outputs": ["honey_block:1"],
+                    "inputs": ["HONEY_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["bone_block:1"],
+                    "inputs": ["BONE_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["slime_block:1"],
+                    "inputs": ["SLIME_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["soul_campfire:1"],
+                    "inputs": ["SOUL_CAMPFIREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["campfire:1"],
+                    "inputs": ["CAMPFIREMINIBLOCK:1"]
+                }, {
+                    "outputs": ["bee_nest:1"],
+                    "inputs": ["BEE_NESTMINIBLOCK:1"]
+                }, {
+                    "outputs": ["lodestone:1"],
+                    "inputs": ["LODESTONEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["crying_obsidian:1"],
+                    "inputs": ["CRYING_OBSIDIANMINIBLOCK:1"]
+                }, {
+                    "outputs": ["soul_lantern:1"],
+                    "inputs": ["SOUL_LANTERNMINIBLOCK:1"]
+                }, {
+                    "outputs": ["lantern:1"],
+                    "inputs": ["LANTERNMINIBLOCK:1"]
+                }, {
+                    "outputs": ["shroomlight:1"],
+                    "inputs": ["SHROOMLIGHTMINIBLOCK:1"]
+                }, {
+                    "outputs": ["redstone_lamp:1"],
+                    "inputs": ["REDSTONE_LAMPMINIBLOCK:1"]
+                }, {
+                    "outputs": ["jack_o_lantern:1"],
+                    "inputs": ["JACK_O_LANTERNMINIBLOCK:1"]
+                }, {
+                    "outputs": ["dead_bush:1"],
+                    "inputs": ["DEAD_BUSHMINIBLOCK:1"]
+                }, {
+                    "outputs": ["totem_of_undying:1"],
+                    "inputs": ["TOTEM_OF_UNDYINGMINIBLOCK:1"]
+                }, {
+                    "outputs": ["sculk_sensor:1"],
+                    "inputs": ["SCULK_SENSORMINIBLOCK:1"]
+                }, {
+                    "outputs": ["scaffolding:1"],
+                    "inputs": ["SCAFFOLDINGMINIBLOCK:1"]
+                }, {
+                    "outputs": ["lava_bucket:1"],
+                    "inputs": ["LAVA_BUCKETMINIBLOCK:1"]
+                }, {
+                    "outputs": ["water_bucket:1"],
+                    "inputs": ["WATER_BUCKETMINIBLOCK:1"]
+                }, {
+                    "outputs": ["milk_bucket:1"],
+                    "inputs": ["MILK_BUCKETMINIBLOCK:1"]
+                }, {
+                    "outputs": ["powder_snow_bucket:1"],
+                    "inputs": ["POWDER_SNOW_BUCKETMINIBLOCK:1"]
+                }, {
+                    "outputs": ["bucket:1"],
+                    "inputs": ["BUCKETMINIBLOCK:1"]
+                }, {
+                    "outputs": ["rose_bush:1"],
+                    "inputs": ["ROSE_BUSHMINIBLOCK:1"]
+                }, {
+                    "outputs": ["chest:1"],
+                    "inputs": ["CHESTMINIBLOCK:1"]
+                }, {
+                    "outputs": ["cocoa_beans:1"],
+                    "inputs": ["COCOA_BEANSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["spyglass:1"],
+                    "inputs": ["SPYGLASSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["bricks:1"],
+                    "inputs": ["BRICKSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["jukebox:1"],
+                    "inputs": ["JUKEBOXMINIBLOCK:1"]
+                }, {
+                    "outputs": ["command_block:1"],
+                    "inputs": ["COMMAND_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["chain_command_block:1"],
+                    "inputs": ["CHAIN_COMMAND_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["repeating_command_block:1"],
+                    "inputs": ["REPEATING_COMMAND_BLOCKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["cactus:1"],
+                    "inputs": ["CACTUSMINIBLOCK:1"]
+                }, {
+                    "outputs": ["observer:1"],
+                    "inputs": ["OBSERVERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["slime_ball:1"],
+                    "inputs": ["SLIME_BALLMINIBLOCK:1"]
+                }, {
+                    "outputs": ["magma_cream:1"],
+                    "inputs": ["MAGMA_CREAMMINIBLOCK:1"]
+                }, {
+                    "outputs": ["piston:1"],
+                    "inputs": ["PISTONMINIBLOCK:1"]
+                }, {
+                    "outputs": ["sticky_piston:1"],
+                    "inputs": ["STICKY_PISTONMINIBLOCK:1"]
+                }, {
+                    "outputs": ["target:1"],
+                    "inputs": ["TARGETMINIBLOCK:1"]
+                }, {
+                    "outputs": ["crafting_table:1"],
+                    "inputs": ["CRAFTING_TABLEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["stonecutter:1"],
+                    "inputs": ["STONECUTTERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["grindstone:1"],
+                    "inputs": ["GRINDSTONEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["fletching_table:1"],
+                    "inputs": ["FLETCHING_TABLEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["smithing_table:1"],
+                    "inputs": ["SMITHING_TABLEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["cartography_table:1"],
+                    "inputs": ["CARTOGRAPHY_TABLEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["enchanting_table:1"],
+                    "inputs": ["ENCHANTING_TABLEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["enchanted_book:1"],
+                    "inputs": ["ENCHANTED_BOOKMINIBLOCK:1"]
+                }, {
+                    "outputs": ["loom:1"],
+                    "inputs": ["LOOMMINIBLOCK:1"]
+                }, {
+                    "outputs": ["lectern:1"],
+                    "inputs": ["LECTERNMINIBLOCK:1"]
+                }, {
+                    "outputs": ["cauldron:1"],
+                    "inputs": ["CAULDRONMINIBLOCK:1"]
+                }, {
+                    "outputs": ["furnace:1"],
+                    "inputs": ["FURNACEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["blast_furnace:1"],
+                    "inputs": ["BLAST_FURNACEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["smoker:1"],
+                    "inputs": ["SMOKERMINIBLOCK:1"]
+                }, {
+                    "outputs": ["anvil:1"],
+                    "inputs": ["ANVILMINIBLOCK:1"]
+                }, {
+                    "outputs": ["chipped_anvil:1"],
+                    "inputs": ["CHIPPED_ANVILMINIBLOCK:1"]
+                }, {
+                    "outputs": ["damaged_anvil:1"],
+                    "inputs": ["DAMAGED_ANVILMINIBLOCK:1"]
+                }, {
+                    "outputs": ["end_crystal:1"],
+                    "inputs": ["END_CRYSTALMINIBLOCK:1"]
+                }, {
+                    "outputs": ["sponge:1"],
+                    "inputs": ["SPONGEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["wet_sponge:1"],
+                    "inputs": ["WET_SPONGEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["cake:1"],
+                    "inputs": ["CAKEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["cookie:1"],
+                    "inputs": ["COOKIEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["pumpkin_pie:1"],
+                    "inputs": ["PUMPKIN_PIEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["sugar_cane:1"],
+                    "inputs": ["SUGAR_CANEMINIBLOCK:1"]
+                }, {
+                    "outputs": ["pumpkin:1"],
+                    "inputs": ["PUMPKINMINIBLOCK:1"]
+                }, {
+                    "outputs": ["carved_pumpkin:1"],
+                    "inputs": ["CARVED_PUMPKINMINIBLOCK:1"]
+                }, {
+                    "outputs": ["melon:1"],
+                    "inputs": ["MELONMINIBLOCK:1"]
+                }, {
+                    "outputs": ["tnt:1"],
+                    "inputs": ["TNTMINIBLOCK:1"]
+                }
+            ],
             "ENHANCED_CRAFTING_TABLE": [
                 {
                     "inputs": [
@@ -29005,6 +29469,72 @@
                         ""
                     ],
                     "outputs": ["NTW_RAKE_3:1"]
+                }
+            ],
+            "NTW_QUANTUM_WORKBENCH": [
+                {
+                    "inputs": [
+                        "NTW_OPTIC_GLASS:1", "NTW_OPTIC_GLASS:1", "NTW_OPTIC_GLASS:1",
+                        "NTW_OPTIC_CABLE:1", "CARGO_MOTOR:1", "NTW_OPTIC_CABLE:1",
+                        "NTW_OPTIC_GLASS:1", "NTW_OPTIC_GLASS:1", "NTW_OPTIC_GLASS:1"
+                    ],
+                    "outputs": ["NTW_QUANTUM_1:1"]
+                },
+                {
+                    "inputs": [
+                        "NTW_OPTIC_GLASS:1", "ALUMINUM_BRASS_INGOT:1", "NTW_OPTIC_GLASS:1",
+                        "SYNTHETIC_SAPPHIRE:1", "NTW_QUANTUM_1:1", "SYNTHETIC_SAPPHIRE:1",
+                        "NTW_OPTIC_GLASS:1", "ALUMINUM_BRASS_INGOT:1", "NTW_OPTIC_GLASS:1"
+                    ],
+                    "outputs": ["NTW_QUANTUM_2:1"]
+                },
+                {
+                    "inputs": [
+                        "NTW_OPTIC_GLASS:1", "CORINTHIAN_BRONZE_INGOT:1", "NTW_OPTIC_GLASS:1",
+                        "SYNTHETIC_DIAMOND:1", "NTW_QUANTUM_2:1", "SYNTHETIC_DIAMOND:1",
+                        "NTW_OPTIC_GLASS:1", "CORINTHIAN_BRONZE_INGOT:1", "NTW_OPTIC_GLASS:1"
+                    ],
+                    "outputs": ["NTW_QUANTUM_3:1"]
+                },
+                {
+                    "inputs": [
+                        "NTW_OPTIC_GLASS:1", "HARDENED_METAL_INGOT:1", "NTW_OPTIC_GLASS:1",
+                        "SYNTHETIC_EMERALD:1", "NTW_QUANTUM_3:1", "SYNTHETIC_EMERALD:1",
+                        "NTW_OPTIC_GLASS:1", "HARDENED_METAL_INGOT:1", "NTW_OPTIC_GLASS:1"
+                    ],
+                    "outputs": ["NTW_QUANTUM_4:1"]
+                },
+                {
+                    "inputs": [
+                        "NTW_OPTIC_GLASS:1", "REINFORCED_ALLOY_INGOT:1", "NTW_OPTIC_GLASS:1",
+                        "POWER_CRYSTAL:1", "NTW_QUANTUM_4:1", "POWER_CRYSTAL:1",
+                        "NTW_OPTIC_GLASS:1", "REINFORCED_ALLOY_INGOT:1", "NTW_OPTIC_GLASS:1"
+                    ],
+                    "outputs": ["NTW_QUANTUM_5:1"]
+                },
+                {
+                    "inputs": [
+                        "STEEL_PLATE:1", "BLISTERING_INGOT:1", "STEEL_PLATE:1",
+                        "CARGO_MOTOR:1", "NTW_QUANTUM_5:1", "CARGO_MOTOR:1",
+                        "STEEL_PLATE:1", "BLISTERING_INGOT:1", "STEEL_PLATE:1"
+                    ],
+                    "outputs": ["NTW_QUANTUM_6:1"]
+                },
+                {
+                    "inputs": [
+                        "REINFORCED_PLATE:1", "BLISTERING_INGOT_2:1", "REINFORCED_PLATE:1",
+                        "CARGO_NODE:1", "NTW_QUANTUM_6:1", "CARGO_NODE:1",
+                        "REINFORCED_PLATE:1", "BLISTERING_INGOT_2:1", "REINFORCED_PLATE:1"
+                    ],
+                    "outputs": ["NTW_QUANTUM_7:1"]
+                },
+                {
+                    "inputs": [
+                        "NTW_OPTIC_GLASS:1", "BLISTERING_INGOT_3:1", "NTW_OPTIC_GLASS:1",
+                        "CARGO_MANAGER:1", "NTW_QUANTUM_7:1", "CARGO_MANAGER:1",
+                        "NTW_OPTIC_GLASS:1", "BLISTERING_INGOT_3:1", "NTW_OPTIC_GLASS:1"
+                    ],
+                    "outputs": ["NTW_QUANTUM_8:1"]
                 }
             ]
         }
@@ -32025,6 +32555,290 @@
                         ""
                     ],
                     "outputs": ["HAMMER:1"]
+                }
+            ],
+            "GOLD_TRANSMUTER": [
+                {
+                    "inputs": ["GOLD_24K_BLOCK:1"],
+                    "outputs": ["gold_block:1"],
+                    "time": 140,
+                    "energy": -126
+                },
+                {
+                    "inputs": ["GOLD_4K:1"],
+                    "outputs": ["gold_nugget:4"],
+                    "time": 40,
+                    "energy": -36
+                },
+                {
+                    "inputs": ["GOLD_6K:1"],
+                    "outputs": ["gold_nugget:9"],
+                    "time": 40,
+                    "energy": -36
+                },
+                {
+                    "inputs": ["GOLD_8K:1"],
+                    "outputs": ["gold_nugget:13"],
+                    "time": 60,
+                    "energy": -54
+                },
+                {
+                    "inputs": ["GOLD_10K:1"],
+                    "outputs": ["gold_nugget:18"],
+                    "time": 60,
+                    "energy": -54
+                },
+                {
+                    "inputs": ["GOLD_12K:1"],
+                    "outputs": ["gold_nugget:22"],
+                    "time": 80,
+                    "energy": -72
+                },
+                {
+                    "inputs": ["GOLD_14K:1"],
+                    "outputs": ["gold_nugget:27"],
+                    "time": 80,
+                    "energy": -72
+                },
+                {
+                    "inputs": ["GOLD_16K:1"],
+                    "outputs": ["gold_nugget:31"],
+                    "time": 100,
+                    "energy": -90
+                },
+                {
+                    "inputs": ["GOLD_18K:1"],
+                    "outputs": ["gold_nugget:36"],
+                    "time": 100,
+                    "energy": -90
+                },
+                {
+                    "inputs": ["GOLD_20K:1"],
+                    "outputs": ["gold_nugget:40"],
+                    "time": 120,
+                    "energy": -108
+                },
+                {
+                    "inputs": ["GOLD_22K:1"],
+                    "outputs": ["gold_nugget:45"],
+                    "time": 120,
+                    "energy": -108
+                },
+                {
+                    "inputs": ["GOLD_24K:1"],
+                    "outputs": ["gold_nugget:49"],
+                    "time": 140,
+                    "energy": -126
+                },
+                {
+                    "inputs": ["gold_ingot:1"],
+                    "outputs": ["GOLD_DUST:1"],
+                    "time": 40,
+                    "energy": -36
+                }
+            ],
+            "COBBLESTONE_GENERATOR": [
+                {
+                    "inputs": [],
+                    "outputs": ["cobblestone:1"],
+                    "time": 20,
+                    "energy": -36
+                }
+            ],
+            "CONCRETE_FACTORY": [
+                {
+                    "inputs": ["red_concrete_powder:8"],
+                    "outputs": ["red_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["orange_concrete_powder:8"],
+                    "outputs": ["orange_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["yellow_concrete_powder:8"],
+                    "outputs": ["yellow_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["lime_concrete_powder:8"],
+                    "outputs": ["lime_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["green_concrete_powder:8"],
+                    "outputs": ["green_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["cyan_concrete_powder:8"],
+                    "outputs": ["cyan_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["blue_concrete_powder:8"],
+                    "outputs": ["blue_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["light_blue_concrete_powder:8"],
+                    "outputs": ["light_blue_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["pink_concrete_powder:8"],
+                    "outputs": ["pink_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["magenta_concrete_powder:8"],
+                    "outputs": ["magenta_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["purple_concrete_powder:8"],
+                    "outputs": ["purple_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["brown_concrete_powder:8"],
+                    "outputs": ["brown_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["black_concrete_powder:8"],
+                    "outputs": ["black_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["gray_concrete_powder:8"],
+                    "outputs": ["gray_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["light_gray_concrete_powder:8"],
+                    "outputs": ["light_gray_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["white_concrete_powder:8"],
+                    "outputs": ["white_concrete:8"],
+                    "time": 80,
+                    "energy": -64
+                }
+            ],
+            "ELECTRIC_COMPOSTER": [
+                {
+                    "inputs": ["#leaves:8"],
+                    "outputs": ["dirt:1"],
+                    "time": 160,
+                    "energy": -144
+                },
+                {
+                    "inputs": ["#saplings:8"],
+                    "outputs": ["dirt:1"],
+                    "time": 160,
+                    "energy": -144
+                },
+                {
+                    "inputs": ["stone:4"],
+                    "outputs": ["netherrack:1"],
+                    "time": 160,
+                    "energy": -144
+                },
+                {
+                    "inputs": ["sand:2"],
+                    "outputs": ["soul_sand:1"],
+                    "time": 160,
+                    "energy": -144
+                },
+                {
+                    "inputs": ["wheat:4"],
+                    "outputs": ["nether_wart:1"],
+                    "time": 160,
+                    "energy": -144
+                }
+            ],
+            "ELECTRIC_COMPOSTER_2": [
+                {
+                    "inputs": ["#leaves:8"],
+                    "outputs": ["dirt:1"],
+                    "time": 40,
+                    "energy": -100
+                },
+                {
+                    "inputs": ["#saplings:8"],
+                    "outputs": ["dirt:1"],
+                    "time": 40,
+                    "energy": -100
+                },
+                {
+                    "inputs": ["stone:4"],
+                    "outputs": ["netherrack:1"],
+                    "time": 40,
+                    "energy": -100
+                },
+                {
+                    "inputs": ["sand:2"],
+                    "outputs": ["soul_sand:1"],
+                    "time": 40,
+                    "energy": -100
+                },
+                {
+                    "inputs": ["wheat:4"],
+                    "outputs": ["nether_wart:1"],
+                    "time": 40,
+                    "energy": -100
+                }
+            ],
+            "VAPORIZER": [
+                {
+                    "inputs": ["water_bucket:1"],
+                    "outputs": ["bucket:1", "SALT:4"],
+                    "time": 160,
+                    "energy": -256
+                },
+                {
+                    "inputs": ["lava_bucket:1"],
+                    "outputs": ["bucket:1", "SULFATE:16"],
+                    "time": 160,
+                    "energy": -256
+                },
+                {
+                    "inputs": ["magma_block:1"],
+                    "outputs": ["SULFATE:1"],
+                    "time": 60,
+                    "energy": -96
+                }
+            ],
+            "PULVERIZER": [
+                {
+                    "inputs": [["stone:4", "granite:4", "diorite:4", "andesite:4", "cobblestone:4", "gravel:4", "grass_block:4", "dirt:4", "coarse_dirt:4", "podzol:4"]],
+                    "outputs": ["sand:1"],
+                    "time": 160,
+                    "energy": -144
+                },
+                {
+                    "inputs": ["netherrack:4"],
+                    "outputs": ["soul_sand:1"],
+                    "time": 160,
+                    "energy": -144
                 }
             ]
         }
