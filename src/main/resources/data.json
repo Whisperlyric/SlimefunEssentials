@@ -45686,12 +45686,12 @@
             }
         },
         "recipes": {
-            "VEX_DATA_CARD": [
+            "GEO_MINER": [
                 {
                     "inputs": [""],
-                    "outputs": ["VEX_GEM:1"],
-                    "energy": 0,
-                    "time": 0
+                    "outputs": ["STARDUST_METEOR:1"],
+                    "time": 140,
+                    "energy": -336
                 }
             ],
             "MULTIBLOCK": [
@@ -45708,561 +45708,6 @@
                         ""
                     ],
                     "outputs": ["WITHER_GOLEM:1"]
-                }
-            ],
-            "GROWTH_CHAMBER": [
-                {
-                    "inputs": ["GRAPE_BUSH:1"],
-                    "outputs": ["GRAPE:1"]
-                },
-                {
-                    "inputs": ["BLUEBERRY_BUSH:1"],
-                    "outputs": ["BLUEBERRY:1"]
-                },
-                {
-                    "inputs": ["ELDERBERRY_BUSH:1"],
-                    "outputs": ["ELDERBERRY:1"]
-                },
-                {
-                    "inputs": ["RASPBERRY_BUSH:1"],
-                    "outputs": ["RASPBERRY:1"]
-                }, {
-                    "inputs": ["BLACKBERRY_BUSH:1"],
-                    "outputs": ["BLACKBERRY:1"]
-                }, {
-                    "inputs": ["CRANBERRY_BUSH:1"],
-                    "outputs": ["CRANBERRY:1"]
-                }, {
-                    "inputs": ["COWBERRY_BUSH:1"],
-                    "outputs": ["COWBERRY:1"]
-                }, {
-                    "inputs": ["STRAWBERRY_BUSH:1"],
-                    "outputs": ["STRAWBERRY:1"]
-                }, {
-                    "inputs": ["TOMATO_BUSH:1"],
-                    "outputs": ["TOMATO:1"]
-                }, {
-                    "inputs": ["LETTUCE_BUSH:1"],
-                    "outputs": ["LETTUCE:1"]
-                }, {
-                    "inputs": ["CABBAGE_BUSH:1"],
-                    "outputs": ["CABBAGE:1"]
-                }, {
-                    "inputs": ["MUSTARD_SEED_BUSH:1"],
-                    "outputs": ["MUSTARD:1"]
-                }, {
-                    "inputs": ["ONION_BUSH:1"],
-                    "outputs": ["ONION:1"]
-                }, {
-                    "inputs": ["GARLIC_BUSH:1"],
-                    "outputs": ["GARLIC:1"]
-                }, {
-                    "inputs": ["CILANTRO_BUSH:1"],
-                    "outputs": ["CILANTRO:1"]
-                }, {
-                    "inputs": ["CORN_BUSH:1"],
-                    "outputs": ["CORN:1"]
-                }, {
-                    "inputs": ["PINEAPPLE_BUSH:1"],
-                    "outputs": ["PINEAPPLE:1"]
-                }, {
-                    "inputs": ["COCONUT_SAPLING:1"],
-                    "outputs": ["COCONUT:1"]
-                }, {
-                    "inputs": ["CHERRY_SAPLING:1"],
-                    "outputs": ["CHERRY:1"]
-                }, {
-                    "inputs": ["POMEGRANATE_SAPLING:1"],
-                    "outputs": ["POMEGRANATE:1"]
-                }, {
-                    "inputs": ["LEMON_SAPLING:1"],
-                    "outputs": ["LEMON:1"]
-                }, {
-                    "inputs": ["PLUM_SAPLING:1"],
-                    "outputs": ["PLUM:1"]
-                }, {
-                    "inputs": ["LIME_SAPLING:1"],
-                    "outputs": ["LIME:1"]
-                }, {
-                    "inputs": ["ORANGE_SAPLING:1"],
-                    "outputs": ["ORANGE:1"]
-                }, {
-                    "inputs": ["PEACH_SAPLING:1"],
-                    "outputs": ["PEACH:1"]
-                }, {
-                    "inputs": ["PEAR_SAPLING:1"],
-                    "outputs": ["PEAR:1"]
-                }, {
-                    "inputs": ["DIRT_PLANT:1"],
-                    "outputs": ["DIRT_ESSENCE:1"]
-                }, {
-                    "inputs": ["COAL_PLANT:1"],
-                    "outputs": ["COAL_ESSENCE:1"]
-                }, {
-                    "inputs": ["IRON_PLANT:1"],
-                    "outputs": ["IRON_ESSENCE:1"]
-                }, {
-                    "inputs": ["GOLD_PLANT:1"],
-                    "outputs": ["GOLD_ESSENCE:1"]
-                }, {
-                    "inputs": ["COPPER_PLANT:1"],
-                    "outputs": ["COPPER_ESSENCE:1"]
-                }, {
-                    "inputs": ["ALUMINUM_PLANT:1"],
-                    "outputs": ["ALUMINUM_ESSENCE:1"]
-                }, {
-                    "inputs": ["TIN_PLANT:1"],
-                    "outputs": ["TIN_ESSENCE:1"]
-                }, {
-                    "inputs": ["SILVER_PLANT:1"],
-                    "outputs": ["SILVER_ESSENCE:1"]
-                }, {
-                    "inputs": ["LEAD_PLANT:1"],
-                    "outputs": ["LEAD_ESSENCE:1"]
-                }, {
-                    "inputs": ["REDSTONE_PLANT:1"],
-                    "outputs": ["REDSTONE_ESSENCE:1"]
-                }, {
-                    "inputs": ["LAPIS_PLANT:1"],
-                    "outputs": ["LAPIS_ESSENCE:1"]
-                }, {
-                    "inputs": ["ENDER_PLANT:1"],
-                    "outputs": ["ENDER_ESSENCE:1"]
-                }, {
-                    "inputs": ["QUARTZ_PLANT:1"],
-                    "outputs": ["QUARTZ_ESSENCE:1"]
-                }, {
-                    "inputs": ["DIAMOND_PLANT:1"],
-                    "outputs": ["DIAMOND_ESSENCE:1"]
-                }, {
-                    "inputs": ["EMERALD_PLANT:1"],
-                    "outputs": ["EMERALD_ESSENCE:1"]
-                }, {
-                    "inputs": ["NETHERITE_PLANT:1"],
-                    "outputs": ["NETHERITE_ESSENCE:1"]
-                }, {
-                    "inputs": ["GLOWSTONE_PLANT:1"],
-                    "outputs": ["GLOWSTONE_ESSENCE:1"]
-                }, {
-                    "inputs": ["OBSIDIAN_PLANT:1"],
-                    "outputs": ["OBSIDIAN_ESSENCE:1"]
-                }, {
-                    "inputs": ["SLIME_PLANT:1"],
-                    "outputs": ["SLIME_ESSENCE:1"]
-                }
-            ],
-            "GROWTH_CHAMBER_MK2": [
-                {
-                    "inputs": ["GRAPE_BUSH:1"],
-                    "outputs": ["GRAPE:1"]
-                },
-                {
-                    "inputs": ["BLUEBERRY_BUSH:1"],
-                    "outputs": ["BLUEBERRY:1"]
-                },
-                {
-                    "inputs": ["ELDERBERRY_BUSH:1"],
-                    "outputs": ["ELDERBERRY:1"]
-                },
-                {
-                    "inputs": ["RASPBERRY_BUSH:1"],
-                    "outputs": ["RASPBERRY:1"]
-                }, {
-                    "inputs": ["BLACKBERRY_BUSH:1"],
-                    "outputs": ["BLACKBERRY:1"]
-                }, {
-                    "inputs": ["CRANBERRY_BUSH:1"],
-                    "outputs": ["CRANBERRY:1"]
-                }, {
-                    "inputs": ["COWBERRY_BUSH:1"],
-                    "outputs": ["COWBERRY:1"]
-                }, {
-                    "inputs": ["STRAWBERRY_BUSH:1"],
-                    "outputs": ["STRAWBERRY:1"]
-                }, {
-                    "inputs": ["TOMATO_BUSH:1"],
-                    "outputs": ["TOMATO:1"]
-                }, {
-                    "inputs": ["LETTUCE_BUSH:1"],
-                    "outputs": ["LETTUCE:1"]
-                }, {
-                    "inputs": ["CABBAGE_BUSH:1"],
-                    "outputs": ["CABBAGE:1"]
-                }, {
-                    "inputs": ["MUSTARD_SEED_BUSH:1"],
-                    "outputs": ["MUSTARD:1"]
-                }, {
-                    "inputs": ["ONION_BUSH:1"],
-                    "outputs": ["ONION:1"]
-                }, {
-                    "inputs": ["GARLIC_BUSH:1"],
-                    "outputs": ["GARLIC:1"]
-                }, {
-                    "inputs": ["CILANTRO_BUSH:1"],
-                    "outputs": ["CILANTRO:1"]
-                }, {
-                    "inputs": ["CORN_BUSH:1"],
-                    "outputs": ["CORN:1"]
-                }, {
-                    "inputs": ["PINEAPPLE_BUSH:1"],
-                    "outputs": ["PINEAPPLE:1"]
-                }, {
-                    "inputs": ["COCONUT_SAPLING:1"],
-                    "outputs": ["COCONUT:1"]
-                }, {
-                    "inputs": ["CHERRY_SAPLING:1"],
-                    "outputs": ["CHERRY:1"]
-                }, {
-                    "inputs": ["POMEGRANATE_SAPLING:1"],
-                    "outputs": ["POMEGRANATE:1"]
-                }, {
-                    "inputs": ["LEMON_SAPLING:1"],
-                    "outputs": ["LEMON:1"]
-                }, {
-                    "inputs": ["PLUM_SAPLING:1"],
-                    "outputs": ["PLUM:1"]
-                }, {
-                    "inputs": ["LIME_SAPLING:1"],
-                    "outputs": ["LIME:1"]
-                }, {
-                    "inputs": ["ORANGE_SAPLING:1"],
-                    "outputs": ["ORANGE:1"]
-                }, {
-                    "inputs": ["PEACH_SAPLING:1"],
-                    "outputs": ["PEACH:1"]
-                }, {
-                    "inputs": ["PEAR_SAPLING:1"],
-                    "outputs": ["PEAR:1"]
-                }, {
-                    "inputs": ["DIRT_PLANT:1"],
-                    "outputs": ["DIRT_ESSENCE:1"]
-                }, {
-                    "inputs": ["COAL_PLANT:1"],
-                    "outputs": ["COAL_ESSENCE:1"]
-                }, {
-                    "inputs": ["IRON_PLANT:1"],
-                    "outputs": ["IRON_ESSENCE:1"]
-                }, {
-                    "inputs": ["GOLD_PLANT:1"],
-                    "outputs": ["GOLD_ESSENCE:1"]
-                }, {
-                    "inputs": ["COPPER_PLANT:1"],
-                    "outputs": ["COPPER_ESSENCE:1"]
-                }, {
-                    "inputs": ["ALUMINUM_PLANT:1"],
-                    "outputs": ["ALUMINUM_ESSENCE:1"]
-                }, {
-                    "inputs": ["TIN_PLANT:1"],
-                    "outputs": ["TIN_ESSENCE:1"]
-                }, {
-                    "inputs": ["SILVER_PLANT:1"],
-                    "outputs": ["SILVER_ESSENCE:1"]
-                }, {
-                    "inputs": ["LEAD_PLANT:1"],
-                    "outputs": ["LEAD_ESSENCE:1"]
-                }, {
-                    "inputs": ["REDSTONE_PLANT:1"],
-                    "outputs": ["REDSTONE_ESSENCE:1"]
-                }, {
-                    "inputs": ["LAPIS_PLANT:1"],
-                    "outputs": ["LAPIS_ESSENCE:1"]
-                }, {
-                    "inputs": ["ENDER_PLANT:1"],
-                    "outputs": ["ENDER_ESSENCE:1"]
-                }, {
-                    "inputs": ["QUARTZ_PLANT:1"],
-                    "outputs": ["QUARTZ_ESSENCE:1"]
-                }, {
-                    "inputs": ["DIAMOND_PLANT:1"],
-                    "outputs": ["DIAMOND_ESSENCE:1"]
-                }, {
-                    "inputs": ["EMERALD_PLANT:1"],
-                    "outputs": ["EMERALD_ESSENCE:1"]
-                }, {
-                    "inputs": ["NETHERITE_PLANT:1"],
-                    "outputs": ["NETHERITE_ESSENCE:1"]
-                }, {
-                    "inputs": ["GLOWSTONE_PLANT:1"],
-                    "outputs": ["GLOWSTONE_ESSENCE:1"]
-                }, {
-                    "inputs": ["OBSIDIAN_PLANT:1"],
-                    "outputs": ["OBSIDIAN_ESSENCE:1"]
-                }, {
-                    "inputs": ["SLIME_PLANT:1"],
-                    "outputs": ["SLIME_ESSENCE:1"]
-                }
-            ],
-            "SEED_PLUCKER": [
-                {
-                    "inputs": ["GRAPE:1"],
-                    "outputs": ["GRAPE_BUSH:1"]
-                },
-                {
-                    "inputs": ["BLUEBERRY:1"],
-                    "outputs": ["BLUEBERRY_BUSH:1"]
-                },
-                {
-                    "inputs": ["ELDERBERRY:1"],
-                    "outputs": ["ELDERBERRY_BUSH:1"]
-                },
-                {
-                    "inputs": ["RASPBERRY:1"],
-                    "outputs": ["RASPBERRY_BUSH:1"]
-                }, {
-                    "inputs": ["BLACKBERRY:1"],
-                    "outputs": ["BLACKBERRY_BUSH:1"]
-                }, {
-                    "inputs": ["CRANBERRY:1"],
-                    "outputs": ["CRANBERRY_BUSH:1"]
-                }, {
-                    "inputs": ["COWBERRY:1"],
-                    "outputs": ["COWBERRY_BUSH:1"]
-                }, {
-                    "inputs": ["STRAWBERRY:1"],
-                    "outputs": ["STRAWBERRY_BUSH:1"]
-                }, {
-                    "inputs": ["TOMATO:1"],
-                    "outputs": ["TOMATO_BUSH:1"]
-                }, {
-                    "inputs": ["LETTUCE:1"],
-                    "outputs": ["LETTUCE_BUSH:1"]
-                }, {
-                    "inputs": ["TEA_LEAF:1"],
-                    "outputs": ["TEA_LEAF_BUSH:1"]
-                }, {
-                    "inputs": ["CABBAGE:1"],
-                    "outputs": ["CABBAGE_BUSH:1"]
-                }, {
-                    "inputs": ["SWEET_POTATO:1"],
-                    "outputs": ["SWEET_POTATO_BUSH:1"]
-                }, {
-                    "inputs": ["MUSTARD_SEED:1"],
-                    "outputs": ["MUSTARD_SEED_BUSH:1"]
-                }, {
-                    "inputs": ["CURRY_LEAF:1"],
-                    "outputs": ["CURRY_LEAF_BUSH:1"]
-                }, {
-                    "inputs": ["ONION:1"],
-                    "outputs": ["ONION_BUSH:1"]
-                }, {
-                    "inputs": ["GARLIC:1"],
-                    "outputs": ["GARLIC_BUSH:1"]
-                }, {
-                    "inputs": ["CILANTRO:1"],
-                    "outputs": ["CILANTRO_BUSH:1"]
-                }, {
-                    "inputs": ["BLACK_PEPPER:1"],
-                    "outputs": ["BLACK_PEPPER_BUSH:1"]
-                }, {
-                    "inputs": ["CORN:1"],
-                    "outputs": ["CORN_BUSH:1"]
-                }, {
-                    "inputs": ["PINEAPPLE:1"],
-                    "outputs": ["PINEAPPLE_BUSH:1"]
-                }, {
-                    "inputs": ["RED_BELL_PEPPER:1"],
-                    "outputs": ["RED_BELL_PEPPER_BUSH:1"]
-                }, {
-                    "inputs": ["OAK_APPLE:1"],
-                    "outputs": ["OAK_APPLE_SAPLING:1"]
-                }, {
-                    "inputs": ["COCONUT:1"],
-                    "outputs": ["COCONUT_SAPLING:1"]
-                }, {
-                    "inputs": ["CHERRY:1"],
-                    "outputs": ["CHERRY_SAPLING:1"]
-                }, {
-                    "inputs": ["POMEGRANATE:1"],
-                    "outputs": ["POMEGRANATE_SAPLING:1"]
-                }, {
-                    "inputs": ["LEMON:1"],
-                    "outputs": ["LEMON_SAPLING:1"]
-                }, {
-                    "inputs": ["PLUM:1"],
-                    "outputs": ["PLUM_SAPLING:1"]
-                }, {
-                    "inputs": ["LIME:1"],
-                    "outputs": ["LIME_SAPLING:1"]
-                }, {
-                    "inputs": ["ORANGE:1"],
-                    "outputs": ["ORANGE_SAPLING:1"]
-                }, {
-                    "inputs": ["PEACH:1"],
-                    "outputs": ["PEACH_SAPLING:1"]
-                }, {
-                    "inputs": ["PEAR:1"],
-                    "outputs": ["PEAR_SAPLING:1"]
-                }, {
-                    "inputs": ["DRAGON_FRUIT:1"],
-                    "outputs": ["DRAGON_FRUIT_SAPLING:1"]
-                }
-            ],
-            "CULINARY_GENERATOR": [
-                {
-                    "inputs": ["GRAPE_JELLY_SANDWICH:1"],
-                    "outputs": ["GRAPE_PIE:1"]
-                },
-                {
-                    "inputs": ["BLUEBERRY_JELLY_SANDWICH:1"],
-                    "outputs": ["BLUEBERRY_PIE:1"]
-                },
-                {
-                    "inputs": ["ELDERBERRY_JELLY_SANDWICH:1"],
-                    "outputs": ["ELDERBERRY_PIE:1"]
-                },
-                {
-                    "inputs": ["RASPBERRY_JELLY_SANDWICH:1"],
-                    "outputs": ["RASPBERRY_PIE:1"]
-                }, {
-                    "inputs": ["BLACKBERRY_JELLY_SANDWICH:1"],
-                    "outputs": ["BLACKBERRY_PIE:1"]
-                }, {
-                    "inputs": ["CRANBERRY_JELLY_SANDWICH:1"],
-                    "outputs": ["CRANBERRY_PIE:1"]
-                }, {
-                    "inputs": ["COWBERRY_JELLY_SANDWICH:1"],
-                    "outputs": ["COWBERRY_PIE:1"]
-                }, {
-                    "inputs": ["STRAWBERRY_JELLY_SANDWICH:1"],
-                    "outputs": ["STRAWBERRY_PIE:1"]
-                }, {
-                    "inputs": ["OAK_APPLE_PIE:1"],
-                    "outputs": ["CHERRY_PIE:1"]
-                }, {
-                    "inputs": ["POMEGRANATE_PIE:1"],
-                    "outputs": ["LEMON_PIE:1"]
-                }, {
-                    "inputs": ["PLUM_PIE:1"],
-                    "outputs": ["LIME_PIE:1"]
-                }, {
-                    "inputs": ["ORANGE_PIE:1"],
-                    "outputs": ["PEACH_PIE:1"]
-                }, {
-                    "inputs": ["PEAR_PIE:1"],
-                    "outputs": ["DRAGON_FRUIT_PIE:1"]
-                }, {
-                    "inputs": ["PUMPKIN_BREAD:1"],
-                    "outputs": ["CHOCOLATE_BAR:1"]
-                }, {
-                    "inputs": ["POTATO_SALAD:1"],
-                    "outputs": ["CHICKEN_SANDWICH:1"]
-                }, {
-                    "inputs": ["FISH_SANDWICH:1"],
-                    "outputs": ["BAGEL:1"]
-                }, {
-                    "inputs": ["EGG_SALAD:1"],
-                    "outputs": ["TOMATO_SOUP:1"]
-                }, {
-                    "inputs": ["STRAWBERRY_SALAD:1"],
-                    "outputs": ["GRAPE_SALAD:1"]
-                }, {
-                    "inputs": ["CHICKEN_CURRY:1"],
-                    "outputs": ["COCONUT_CHICKEN_CURRY:1"]
-                }, {
-                    "inputs": ["BISCUIT:1"],
-                    "outputs": ["BISCUITS_GRAVY:1"]
-                }, {
-                    "inputs": ["CHEESECAKE:1"],
-                    "outputs": ["CHERRY_CHEESECAKE:1"]
-                }, {
-                    "inputs": ["BLUEBERRY_CHEESECAKE:1"],
-                    "outputs": ["PUMPKIN_CHEESECAKE:1"]
-                }, {
-                    "inputs": ["SWEETENED_PEAR_CHEESECAKE:1"],
-                    "outputs": ["BLACKBERRY_COBBLER:1"]
-                }, {
-                    "inputs": ["PAVLOVA:1"],
-                    "outputs": ["CORN_ON_THE_COB:1"]
-                }, {
-                    "inputs": ["CREAMED_CORN:1"],
-                    "outputs": ["BACON:1"]
-                }, {
-                    "inputs": ["SANDWICH:1"],
-                    "outputs": ["BLT:1"]
-                }, {
-                    "inputs": ["LEAFY_CHICKEN_SANDWICH:1"],
-                    "outputs": ["LEAFY_FISH_SANDWICH:1"]
-                }, {
-                    "inputs": ["HAMBURGER:1"],
-                    "outputs": ["CHEESEBURGER:1"]
-                }, {
-                    "inputs": ["BACON_CHEESEBURGER:1"],
-                    "outputs": ["DELUXE_CHEESEBURGER:1"]
-                }, {
-                    "inputs": ["GARLIC_BREAD:1"],
-                    "outputs": ["GARLIC_CHEESE_BREAD:1"]
-                }, {
-                    "inputs": ["CARROT_CAKE:1"],
-                    "outputs": ["CHICKEN_BURGER:1"]
-                }, {
-                    "inputs": ["CHICKEN_CHEESEBURGER:1"],
-                    "outputs": ["BACON_BURGER:1"]
-                }, {
-                    "inputs": ["BACON_SANDWICH:1"],
-                    "outputs": ["TACO:1"]
-                }, {
-                    "inputs": ["FISH_TACO:1"],
-                    "outputs": ["STREET_TACO:1"]
-                }, {
-                    "inputs": ["JAMMY_DODGER:1"],
-                    "outputs": ["PANCAKES:1"]
-                }, {
-                    "inputs": ["BLUEBERRY_PANCAKES:1"],
-                    "outputs": ["SWEET_BERRY_PANCAKES:1"]
-                }, {
-                    "inputs": ["FRIES:1"],
-                    "outputs": ["POPCORN:1"]
-                }, {
-                    "inputs": ["SWEET_POPCORN:1"],
-                    "outputs": ["SALTY_POPCORN:1"]
-                }, {
-                    "inputs": ["SHEPARDS_PIE:1"],
-                    "outputs": ["CHICKEN_POT_PIE:1"]
-                }, {
-                    "inputs": ["CHOCOLATE_CAKE:1"],
-                    "outputs": ["CREAM_COOKIE:1"]
-                }, {
-                    "inputs": ["BLUEBERRY_MUFFIN:1"],
-                    "outputs": ["PUMPKIN_MUFFIN:1"]
-                }, {
-                    "inputs": ["CHOCOLATE_CHIP_MUFFIN:1"],
-                    "outputs": ["BOSTON_CREAM_PIE:1"]
-                }, {
-                    "inputs": ["HOT_DOG:1"],
-                    "outputs": ["BACON_WRAPPED_CHEESE_FILLED_HOT_DOG:1"]
-                }, {
-                    "inputs": ["BBQ_BACON_WRAPPED_HOT_DOG:1"],
-                    "outputs": ["BBQ_DOUBLE_BACON_WRAPPED_HOT_DOG_IN_A_TORTILLA_WITH_CHEESE:1"]
-                }, {
-                    "inputs": ["SWEETENED_TEA:1"],
-                    "outputs": ["HOT_CHOCOLATE:1"]
-                }, {
-                    "inputs": ["PINACOLADA:1"],
-                    "outputs": ["CHOCOLATE_STRAWBERRY:1"]
-                }, {
-                    "inputs": ["SWEET_POTATO_PIE:1"],
-                    "outputs": ["LAMINGTON:1"]
-                }, {
-                    "inputs": ["WAFFLES:1"],
-                    "outputs": ["CLUB_SANDWICH:1"]
-                }, {
-                    "inputs": ["BURRITO:1"],
-                    "outputs": ["CHICKEN_BURRITO:1"]
-                }, {
-                    "inputs": ["GRILLED_SANDWICH:1"],
-                    "outputs": ["LASAGNA:1"]
-                }, {
-                    "inputs": ["ICE_CREAM:1"],
-                    "outputs": ["TIRAMISU:1"]
-                }, {
-                    "inputs": ["TIRAMISU_WITH_STRAWBERRIES:1"],
-                    "outputs": ["TIRAMISU_WITH_RASPBERRIES:1"]
-                }, {
-                    "inputs": ["TIRAMISU_WITH_BLACKBERRIES:1"],
-                    "outputs": ["CHOCOLATE_PEAR_CAKE:1"]
-                }, {
-                    "inputs": ["APPLE_PEAR_CAKE:1"],
-                    "outputs": ["STUFFED_RED_BELL_PEPPER:1"]
                 }
             ],
             "ENHANCED_CRAFTING_TABLE": [
@@ -46360,19 +45805,6 @@
                         ""
                     ],
                     "outputs": ["SCOOP:1"]
-                }, {
-                    "inputs": [
-                        "brick:1",
-                        "ELECTRIC_FURNACE:1",
-                        "brick:1",
-                        "STAINLESS_STEEL:1",
-                        "GOLD_24K_BLOCK:1",
-                        "STAINLESS_STEEL:1",
-                        "terracotta:1",
-                        "terracotta:1",
-                        "terracotta:1"
-                    ],
-                    "outputs": ["KITCHEN_AUTO_CRAFTER:1"]
                 }, {
                     "inputs": [
                         "HARDENED_GLASS:1",
@@ -47492,12 +46924,1532 @@
                     "energy": -180,
                     "time": 90
                 }
+            ],
+            "GROWTH_CHAMBER": [
+                {
+                    "inputs": ["cocoa_beans:1"],
+                    "outputs": ["cocoa_beans:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["melon_seeds:1"],
+                    "outputs": ["melon:1", "melon_seeds:1"],
+                    "time": 300,
+                    "energy": -960
+                },
+                {
+                    "inputs": ["pumpkin_seeds:1"],
+                    "outputs": ["pumpkin:1", "pumpkin_seeds:1"],
+                    "time": 300,
+                    "energy": -960
+                },
+                {
+                    "inputs": ["beetroot_seeds:1"],
+                    "outputs": ["beetroot:3", "beetroot_seeds:2"],
+                    "time": 300,
+                    "energy": -960
+                },
+                {
+                    "inputs": ["wheat_seeds:1"],
+                    "outputs": ["wheat:3", "wheat_seeds:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["apple:1"],
+                    "outputs": ["apple:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["brown_mushroom:1"],
+                    "outputs": ["brown_mushroom:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["red_mushroom:1"],
+                    "outputs": ["red_mushroom:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_bush:1"],
+                    "outputs": ["dead_bush:3", "stick:2"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["grass:1"],
+                    "outputs": ["grass:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["tall_grass:1"],
+                    "outputs": ["tall_grass:3"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["fern:1"],
+                    "outputs": ["fern:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["tall_fern:1"],
+                    "outputs": ["tall_fern:3"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["vine:1"],
+                    "outputs": ["vine:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dandelion:1"],
+                    "outputs": ["dandelion:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["poppy:1"],
+                    "outputs": ["poppy:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["blue_orchid:1"],
+                    "outputs": ["blue_orchid:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["allium:1"],
+                    "outputs": ["allium:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["azure_bluet:1"],
+                    "outputs": ["azure_bluet:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["red_tulip:1"],
+                    "outputs": ["red_tulip:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["orange_tulip:1"],
+                    "outputs": ["orange_tulip:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["white_tulip:1"],
+                    "outputs": ["white_tulip:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["pink_tulip:1"],
+                    "outputs": ["pink_tulip:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["oxeye_daisy:1"],
+                    "outputs": ["oxeye_daisy:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["cornflower:1"],
+                    "outputs": ["cornflower:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["lily_of_the_valley:1"],
+                    "outputs": ["lily_of_the_valley:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["wither_rose:1"],
+                    "outputs": ["wither_rose:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["sunflower:1"],
+                    "outputs": ["sunflower:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["lilac:1"],
+                    "outputs": ["lilac:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["rose_bush:1"],
+                    "outputs": ["rose_bush:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["peony:1"],
+                    "outputs": ["peony:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["carrot:1"],
+                    "outputs": ["carrot:3"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["potato:1"],
+                    "outputs": ["potato:3"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["sweet_berries:1"],
+                    "outputs": ["sweet_berries:3"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["sugar_cane:1"],
+                    "outputs": ["sugar_cane:3"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["bamboo:1"],
+                    "outputs": ["bamboo:3"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["cactus:1"],
+                    "outputs": ["cactus:3"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["oak_sapling:1"],
+                    "outputs": ["oak_sapling:3", "oak_log:6"],
+                    "time": 600,
+                    "energy": -1920
+                },
+                {
+                    "inputs": ["birch_sapling:1"],
+                    "outputs": ["birch_sapling:3", "birch_log:6"],
+                    "time": 600,
+                    "energy": -1920
+                },
+                {
+                    "inputs": ["spruce_sapling:1"],
+                    "outputs": ["spruce_sapling:3", "spruce_log:6"],
+                    "time": 600,
+                    "energy": -1920
+                },
+                {
+                    "inputs": ["dark_oak_sapling:1"],
+                    "outputs": ["dark_oak_sapling:3", "dark_oak_log:6"],
+                    "time": 600,
+                    "energy": -1920
+                },
+                {
+                    "inputs": ["jungle_sapling:1"],
+                    "outputs": ["jungle_sapling:3", "jungle_log:6"],
+                    "time": 600,
+                    "energy": -1920
+                },
+                {
+                    "inputs": ["acacia_sapling:1"],
+                    "outputs": ["acacia_sapling:3", "acacia_log:6"],
+                    "time": 600,
+                    "energy": -1920
+                }
+            ],
+            "GROWTH_CHAMBER_MK2": [
+                {
+                    "inputs": ["cocoa_beans:1"],
+                    "outputs": ["cocoa_beans:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["melon_seeds:1"],
+                    "outputs": ["melon:3", "melon_seeds:3"],
+                    "time": 100,
+                    "energy": -1280
+                },
+                {
+                    "inputs": ["pumpkin_seeds:1"],
+                    "outputs": ["pumpkin:3", "pumpkin_seeds:3"],
+                    "time": 100,
+                    "energy": -1280
+                },
+                {
+                    "inputs": ["beetroot_seeds:1"],
+                    "outputs": ["beetroot:9", "beetroot_seeds:6"],
+                    "time": 100,
+                    "energy": -1280
+                },
+                {
+                    "inputs": ["wheat_seeds:1"],
+                    "outputs": ["wheat:6", "wheat_seeds:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["apple:1"],
+                    "outputs": ["apple:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["brown_mushroom:1"],
+                    "outputs": ["brown_mushroom:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["red_mushroom:1"],
+                    "outputs": ["red_mushroom:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_bush:1"],
+                    "outputs": ["dead_bush:9", "stick:6"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["grass:1"],
+                    "outputs": ["grass:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["tall_grass:1"],
+                    "outputs": ["tall_grass:9"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["fern:1"],
+                    "outputs": ["fern:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["tall_fern:1"],
+                    "outputs": ["tall_fern:9"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["vine:1"],
+                    "outputs": ["vine:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dandelion:1"],
+                    "outputs": ["dandelion:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["poppy:1"],
+                    "outputs": ["poppy:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["blue_orchid:1"],
+                    "outputs": ["blue_orchid:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["allium:1"],
+                    "outputs": ["allium:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["azure_bluet:1"],
+                    "outputs": ["azure_bluet:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["red_tulip:1"],
+                    "outputs": ["red_tulip:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["orange_tulip:1"],
+                    "outputs": ["orange_tulip:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["white_tulip:1"],
+                    "outputs": ["white_tulip:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["pink_tulip:1"],
+                    "outputs": ["pink_tulip:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["oxeye_daisy:1"],
+                    "outputs": ["oxeye_daisy:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["cornflower:1"],
+                    "outputs": ["cornflower:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["lily_of_the_valley:1"],
+                    "outputs": ["lily_of_the_valley:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["wither_rose:1"],
+                    "outputs": ["wither_rose:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["sunflower:1"],
+                    "outputs": ["sunflower:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["lilac:1"],
+                    "outputs": ["lilac:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["rose_bush:1"],
+                    "outputs": ["rose_bush:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["peony:1"],
+                    "outputs": ["peony:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["carrot:1"],
+                    "outputs": ["carrot:9"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["potato:1"],
+                    "outputs": ["potato:9"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["sweet_berries:1"],
+                    "outputs": ["sweet_berries:9"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["sugar_cane:1"],
+                    "outputs": ["sugar_cane:9"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["bamboo:1"],
+                    "outputs": ["bamboo:9"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["cactus:1"],
+                    "outputs": ["cactus:9"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["oak_sapling:1"],
+                    "outputs": ["oak_sapling:9", "oak_log:18"],
+                    "time": 200,
+                    "energy": -2560
+                },
+                {
+                    "inputs": ["birch_sapling:1"],
+                    "outputs": ["birch_sapling:9", "birch_log:18"],
+                    "time": 200,
+                    "energy": -2560
+                },
+                {
+                    "inputs": ["spruce_sapling:1"],
+                    "outputs": ["spruce_sapling:9", "spruce_log:18"],
+                    "time": 200,
+                    "energy": -2560
+                },
+                {
+                    "inputs": ["dark_oak_sapling:1"],
+                    "outputs": ["dark_oak_sapling:9", "dark_oak_log:18"],
+                    "time": 200,
+                    "energy": -2560
+                },
+                {
+                    "inputs": ["jungle_sapling:1"],
+                    "outputs": ["jungle_sapling:9", "jungle_log:18"],
+                    "time": 200,
+                    "energy": -2560
+                },
+                {
+                    "inputs": ["acacia_sapling:1"],
+                    "outputs": ["acacia_sapling:9", "acacia_log:18"],
+                    "time": 200,
+                    "energy": -2560
+                }
+            ],
+            "GROWTH_CHAMBER_END": [
+                {
+                    "inputs": ["chorus_flower:1"],
+                    "outputs": ["chorus_flower:2", "chorus_fruit:8"],
+                    "time": 180,
+                    "energy": -576
+                }
+            ],
+            "GROWTH_CHAMBER_END_MK2": [
+                {
+                    "inputs": ["chorus_flower:1"],
+                    "outputs": ["chorus_flower:6", "chorus_fruit:24"],
+                    "time": 60,
+                    "energy": -768
+                }
+            ],
+            "GROWTH_CHAMBER_NETHER": [
+                {
+                    "inputs": ["nether_wart:1"],
+                    "outputs": ["nether_wart:4"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["weeping_vines:1"],
+                    "outputs": ["weeping_vines:4"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["twisting_vines:1"],
+                    "outputs": ["twisting_vines:4"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["crimson_roots:1"],
+                    "outputs": ["crimson_roots:4"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["warped_roots:1"],
+                    "outputs": ["warped_roots:4"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["nether_sprouts:1"],
+                    "outputs": ["nether_sprouts:4"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["crimson_fungus:1"],
+                    "outputs": ["crimson_fungus:2", "crimson_stem:6"],
+                    "time": 600,
+                    "energy": -1920
+                },
+                {
+                    "inputs": ["warped_fungus:1"],
+                    "outputs": ["warped_fungus:2", "warped_stem:6"],
+                    "time": 600,
+                    "energy": -1920
+                }
+            ],
+            "GROWTH_CHAMBER_NETHER_MK2": [
+                {
+                    "inputs": ["nether_wart:1"],
+                    "outputs": ["nether_wart:12"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["weeping_vines:1"],
+                    "outputs": ["weeping_vines:12"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["twisting_vines:1"],
+                    "outputs": ["twisting_vines:12"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["crimson_roots:1"],
+                    "outputs": ["crimson_roots:12"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["warped_roots:1"],
+                    "outputs": ["warped_roots:12"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["nether_sprouts:1"],
+                    "outputs": ["nether_sprouts:12"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["crimson_fungus:1"],
+                    "outputs": ["crimson_fungus:6", "crimson_stem:18"],
+                    "time": 200,
+                    "energy": -2560
+                },
+                {
+                    "inputs": ["warped_fungus:1"],
+                    "outputs": ["warped_fungus:6", "warped_stem:18"],
+                    "time": 200,
+                    "energy": -2560
+                }
+            ],
+            "GROWTH_CHAMBER_OCEAN": [
+                {
+                    "inputs": ["lily_pad:1"],
+                    "outputs": ["lily_pad:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["sea_pickle:1"],
+                    "outputs": ["sea_pickle:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["seagrass:1"],
+                    "outputs": ["seagrass:4"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["kelp:1"],
+                    "outputs": ["kelp:3"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_tube_coral_block:1"],
+                    "outputs": ["tube_coral_block:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_brain_coral_block:1"],
+                    "outputs": ["brain_coral_block:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_bubble_coral_block:1"],
+                    "outputs": ["bubble_coral_block:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_fire_coral_block:1"],
+                    "outputs": ["fire_coral_block:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_horn_coral_block:1"],
+                    "outputs": ["horn_coral_block:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["tube_coral_block:1"],
+                    "outputs": ["tube_coral_block:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["brain_coral_block:1"],
+                    "outputs": ["brain_coral_block:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["bubble_coral_block:1"],
+                    "outputs": ["bubble_coral_block:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["fire_coral_block:1"],
+                    "outputs": ["fire_coral_block:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["horn_coral_block:1"],
+                    "outputs": ["horn_coral_block:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_tube_coral:1"],
+                    "outputs": ["tube_coral:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_brain_coral:1"],
+                    "outputs": ["brain_coral:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_bubble_coral:1"],
+                    "outputs": ["bubble_coral:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_fire_coral:1"],
+                    "outputs": ["fire_coral:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_horn_coral:1"],
+                    "outputs": ["horn_coral:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["tube_coral:1"],
+                    "outputs": ["tube_coral:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["brain_coral:1"],
+                    "outputs": ["brain_coral:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["bubble_coral:1"],
+                    "outputs": ["bubble_coral:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["fire_coral:1"],
+                    "outputs": ["fire_coral:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["horn_coral:1"],
+                    "outputs": ["horn_coral:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_tube_coral_fan:1"],
+                    "outputs": ["tube_coral_fan:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_brain_coral_fan:1"],
+                    "outputs": ["brain_coral_fan:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_bubble_coral_fan:1"],
+                    "outputs": ["bubble_coral_fan:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_fire_coral_fan:1"],
+                    "outputs": ["fire_coral_fan:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["dead_horn_coral_fan:1"],
+                    "outputs": ["horn_coral_fan:1"],
+                    "time": 180,
+                    "energy": -576
+                },
+                {
+                    "inputs": ["tube_coral_fan:1"],
+                    "outputs": ["tube_coral_fan:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["brain_coral_fan:1"],
+                    "outputs": ["brain_coral_fan:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["bubble_coral_fan:1"],
+                    "outputs": ["bubble_coral_fan:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["fire_coral_fan:1"],
+                    "outputs": ["fire_coral_fan:2"],
+                    "time": 240,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["horn_coral_fan:1"],
+                    "outputs": ["horn_coral_fan:2"],
+                    "time": 240,
+                    "energy": -768
+                }
+            ],
+            "GROWTH_CHAMBER_OCEAN_MK2": [
+                {
+                    "inputs": ["lily_pad:1"],
+                    "outputs": ["lily_pad:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["sea_pickle:1"],
+                    "outputs": ["sea_pickle:9"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["seagrass:1"],
+                    "outputs": ["seagrass:12"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["kelp:1"],
+                    "outputs": ["kelp:93"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_tube_coral_block:1"],
+                    "outputs": ["tube_coral_block:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_brain_coral_block:1"],
+                    "outputs": ["brain_coral_block:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_bubble_coral_block:1"],
+                    "outputs": ["bubble_coral_block:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_fire_coral_block:1"],
+                    "outputs": ["fire_coral_block:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_horn_coral_block:1"],
+                    "outputs": ["horn_coral_block:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["tube_coral_block:1"],
+                    "outputs": ["tube_coral_block:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["brain_coral_block:1"],
+                    "outputs": ["brain_coral_block:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["bubble_coral_block:1"],
+                    "outputs": ["bubble_coral_block:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["fire_coral_block:1"],
+                    "outputs": ["fire_coral_block:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["horn_coral_block:1"],
+                    "outputs": ["horn_coral_block:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["dead_tube_coral:1"],
+                    "outputs": ["tube_coral:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_brain_coral:1"],
+                    "outputs": ["brain_coral:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_bubble_coral:1"],
+                    "outputs": ["bubble_coral:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_fire_coral:1"],
+                    "outputs": ["fire_coral:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_horn_coral:1"],
+                    "outputs": ["horn_coral:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["tube_coral:1"],
+                    "outputs": ["tube_coral:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["brain_coral:1"],
+                    "outputs": ["brain_coral:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["bubble_coral:1"],
+                    "outputs": ["bubble_coral:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["fire_coral:1"],
+                    "outputs": ["fire_coral:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["horn_coral:1"],
+                    "outputs": ["horn_coral:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["dead_tube_coral_fan:1"],
+                    "outputs": ["tube_coral_fan:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_brain_coral_fan:1"],
+                    "outputs": ["brain_coral_fan:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_bubble_coral_fan:1"],
+                    "outputs": ["bubble_coral_fan:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_fire_coral_fan:1"],
+                    "outputs": ["fire_coral_fan:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["dead_horn_coral_fan:1"],
+                    "outputs": ["horn_coral_fan:3"],
+                    "time": 60,
+                    "energy": -768
+                },
+                {
+                    "inputs": ["tube_coral_fan:1"],
+                    "outputs": ["tube_coral_fan:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["brain_coral_fan:1"],
+                    "outputs": ["brain_coral_fan:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["bubble_coral_fan:1"],
+                    "outputs": ["bubble_coral_fan:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["fire_coral_fan:1"],
+                    "outputs": ["fire_coral_fan:6"],
+                    "time": 80,
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["horn_coral_fan:1"],
+                    "outputs": ["horn_coral_fan:6"],
+                    "time": 80,
+                    "energy": -1024
+                }
+            ],
+            "WEATHER_CONTROLLER": [
+                {
+                    "inputs": ["sunflower:1"],
+                    "outputs": ["WEATHER_CLEAR:1"],
+                    "time": 10,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["lilac:1"],
+                    "outputs": ["WEATHER_RAIN:1"],
+                    "time": 10,
+                    "energy": -64
+                },
+                {
+                    "inputs": ["creeper_head:1"],
+                    "outputs": ["WEATHER_STORM:1"],
+                    "time": 10,
+                    "energy": -64
+                }
+            ],
+            "MATERIAL_HIVE": [
+                {
+                    "inputs": ["ALUMINUM_INGOT:64"],
+                    "outputs": ["ALUMINUM_INGOT:1"],
+                    "conditions": ["material_hive"],
+                    "time": 36000,
+                    "energy": -3686400 
+                }
+            ],
+            "SEED_PLUCKER": [
+                {
+                    "inputs": ["chorus_fruit:4"],
+                    "outputs": ["chorus_flower:1"],
+                    "time": 200,
+                    "energy": -640
+                },
+                {
+                    "inputs": ["wheat:1"],
+                    "outputs": ["wheat_seeds:1"],
+                    "time": 200,
+                    "energy": -640
+                },
+                {
+                    "inputs": ["beetroot:1"],
+                    "outputs": ["beetroot_seeds:1"],
+                    "time": 200,
+                    "energy": -640
+                },
+                {
+                    "inputs": ["pumpkin:1"],
+                    "outputs": ["pumpkin_seeds:1"],
+                    "time": 200,
+                    "energy": -640
+                },
+                {
+                    "inputs": ["melon_slice:4"],
+                    "outputs": ["melon_seeds:1"],
+                    "time": 200,
+                    "energy": -640
+                }
+            ],
+            "[PLACE]ORECHID": [
+                {
+                    "inputs": ["stone:1"],
+                    "outputs": ["coal_ore:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["stone:1"],
+                    "outputs": ["iron_ore:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["stone:1"],
+                    "outputs": ["gold_ore:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["stone:1"],
+                    "outputs": ["diamond_ore:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["stone:1"],
+                    "outputs": ["emerald_ore:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["stone:1"],
+                    "outputs": ["redstone_ore:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["stone:1"],
+                    "outputs": ["lapis_ore:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["stone:1"],
+                    "outputs": ["copper_ore:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["netherrack:1"],
+                    "outputs": ["nether_quartz_ore:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["netherrack:1"],
+                    "outputs": ["nether_gold_ore:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["netherrack:1"],
+                    "outputs": ["ancient_debris:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["netherrack:1"],
+                    "outputs": ["basalt:1"],
+                    "energy": -1024
+                },
+                {
+                    "inputs": ["netherrack:1"],
+                    "outputs": ["blackstone:1"],
+                    "energy": -1024
+                }
+            ],
+            "[WATERLOGGED]WATER_MILL": [
+                {
+                    "time": 10,
+                    "energy": 16
+                }
+            ],
+            "[WATERLOGGED]WATER_TURBINE": [
+                {
+                    "time": 10,
+                    "energy": 64
+                }
+            ],
+            "[DRAGON_EGG]DRAGON_GENERATOR": [
+                {
+                    "time": 10,
+                    "energy": 32
+                }
+            ],
+            "CHIPPING_GENERATOR": [
+                {
+                    "inputs": ["golden_axe:1"],
+                    "outputs": [""],
+                    "time": 640,
+                    "energy": 512
+                }
+            ],
+            "CULINARY_GENERATOR": [
+                {
+                    "inputs": [["beetroot:1", "dried_kelp:1", "potato:1", "tropical_fish:1"]],
+                    "outputs": [""],
+                    "time": 40,
+                    "energy": 64
+                },
+                {
+                    "inputs": [["cookie:1", "melon_slice:1", "chicken:1", "cod:1", "mutton:1", "sweet_berries:1", "salmon:1"]],
+                    "outputs": [],
+                    "time": 80,
+                    "energy": 128
+                },
+                {
+                    "inputs": [["carrot:1", "beef:1", "porkchop:1", "rabbit:1"]],
+                    "outputs": [],
+                    "time": 120,
+                    "energy": 192
+                },
+                {
+                    "inputs": [["apple:1", "golden_apple:1", "enchanted_golden_apple:1", "chorus_fruit:1"]],
+                    "outputs": [],
+                    "time": 200,
+                    "energy": 320
+                },
+                {
+                    "inputs": [["baked_potato:1", "cooked_rabbit:1", "cooked_cod:1", "bread:1"]],
+                    "outputs": [],
+                    "time": 360,
+                    "energy": 576
+                },
+                {
+                    "inputs": [["cooked_mutton:1", "cooked_chicken:1", "cooked_salmon:1", "golden_carrot:1"]],
+                    "outputs": [""],
+                    "time": 480,
+                    "energy": 768
+                },
+                {
+                    "inputs": [["cooked_porkchop:1", "cooked_beef:1", "pumpkin_pie:1"]],
+                    "outputs": [""],
+                    "time": 720,
+                    "energy": 1152
+                }
+            ],
+            "STARDUST_REACTOR": [
+                {
+                    "inputs": ["STAR_DUST:1"],
+                    "outputs": [],
+                    "time": 640,
+                    "energy": 65536
+                }
+            ],
+            "DT_COPPER_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["COPPER_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_TIN_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["TIN_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_SILVER_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["SILVER_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_ALUMINUM_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["ALUMINUM_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_LEAD_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["LEAD_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_ZINC_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["ZINC_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_MAGNESIUM_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["MAGNESIUM_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_STEEL_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["STEEL_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_DURALUMIN_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["DURALUMIN_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_BILLON_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["BILLON_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_BRASS_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["BRASS_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_ALUMINUM_BRASS_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["ALUMINUM_BRASS_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_ALUMINUM_BRONZE_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["ALUMINUM_BRONZE_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_CORINTHIAN_BRONZE_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["CORINTHIAN_BRONZE_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_SOLDER_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["SOLDER_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_DAMASCUS_STEEL_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["DAMASCUS_STEEL_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_HARDENED_METAL_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["HARDENED_METAL_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_REINFORCED_ALLOY_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["REINFORCED_ALLOY_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_FERROSILICON_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["FERROSILICON:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_GILDED_IRON_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["GILDED_IRON:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_NICKEL_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["NICKEL_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_COBALT_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["COBALT_INGOT:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_REDSTONE_ALLOY_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["REDSTONE_ALLOY:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_SYNTHETIC_DIAMOND_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["SYNTHETIC_DIAMOND:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_SYNTHETIC_EMERALD_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["SYNTHETIC_EMERALD:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_SYNTHETIC_SAPPHIRE_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["SYNTHETIC_SAPPHIRE:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_CARBONADO_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["CARBONADO:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_IRON_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["iron_ingot:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_GOLD_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["gold_ingot:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_NETHERITE_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["netherite_ingot:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_DIAMOND_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["diamond:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_EMERALD_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["emerald:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_LAPIS_LAZULI_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["lapis_lazuli:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_QUARTZ_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["quartz:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_REDSTONE_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["redstone:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
+            ],
+            "DT_COAL_MINERALIZED_APIARY": [
+                {
+                    "outputs": ["coal:1"],
+                    "time": 2000,
+                    "energy": -204800
+                }
             ]
         },
         "multiblocks": {
             "WITHER_GOLEM": {
                 "item": "minecraft:wither_skeleton_skull",
                 "nbt": "{PublicBukkitValues:{\"slimefun:slimefun_item\":\"WITHER_GOLEM\"},display:{Lore:[\u0027{\"text\":\"\"}\u0027,\u0027{\"extra\":[{\"text\":\"Spawns a Wither Skeleton\"}],\"text\":\"\"}\u0027,\u0027{\"text\":\"\"}\u0027],Name:\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"gold\",\"text\":\"Wither Golem MultiBlock\"}],\"text\":\"\"}\u0027 }}"
+            }
+        },
+        "placeholders": {
+            "WEATHER_CLEAR": {
+                "item": "minecraft:glass",
+                "nbt": "{display:{Name:\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"white\",\"text\":\"Weather Clears\"}],\"text\":\"\"}\u0027 }}"
+            },
+            "WEATHER_RAIN": {
+                "item": "minecraft:blue_stained_glass",
+                "nbt": "{display:{Name:\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"aqua\",\"text\":\"Creates Rain\"}],\"text\":\"\"}\u0027 }}"
+            },
+            "WEATHER_STORM": {
+                "item": "minecraft:lightning_rod",
+                "nbt": "{display:{Name:\u0027{\"extra\":[{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"yellow\",\"text\":\"Creates Thunder\"}],\"text\":\"\"}\u0027 }}"
             }
         }
     },
