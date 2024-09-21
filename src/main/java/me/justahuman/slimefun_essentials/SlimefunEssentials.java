@@ -5,9 +5,8 @@ import me.justahuman.slimefun_essentials.client.payloads.DisabledItemPayload;
 import me.justahuman.slimefun_essentials.client.payloads.SlimefunAddonPayload;
 import me.justahuman.slimefun_essentials.client.payloads.SlimefunBlockPayload;
 import me.justahuman.slimefun_essentials.compat.cloth_config.ConfigScreen;
-import me.justahuman.slimefun_essentials.compat.rei.ReiIntegration;
 import me.justahuman.slimefun_essentials.config.ModConfig;
-import me.justahuman.slimefun_essentials.utils.Channels;
+import me.justahuman.slimefun_essentials.utils.Payloads;
 import me.justahuman.slimefun_essentials.utils.CompatUtils;
 import me.justahuman.slimefun_essentials.utils.Utils;
 import net.fabricmc.api.ClientModInitializer;
@@ -34,9 +33,9 @@ import java.util.List;
 public class SlimefunEssentials implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        PayloadTypeRegistry.playS2C().register(Channels.ADDON_CHANNEL, SlimefunAddonPayload.CODEC);
-        PayloadTypeRegistry.playS2C().register(Channels.BLOCK_CHANNEL, SlimefunBlockPayload.CODEC);
-        PayloadTypeRegistry.playS2C().register(Channels.ITEM_CHANNEL, DisabledItemPayload.CODEC);
+        PayloadTypeRegistry.playS2C().register(Payloads.ADDON_CHANNEL, SlimefunAddonPayload.CODEC);
+        PayloadTypeRegistry.playS2C().register(Payloads.BLOCK_CHANNEL, SlimefunBlockPayload.CODEC);
+        PayloadTypeRegistry.playS2C().register(Payloads.ITEM_CHANNEL, DisabledItemPayload.CODEC);
         ModConfig.loadConfig();
 
         /*if (CompatUtils.isPatchouliLoaded()) {
@@ -62,11 +61,6 @@ public class SlimefunEssentials implements ClientModInitializer {
             public void reload(ResourceManager manager) {
                 ResourceLoader.clear();
                 ResourceLoader.loadResources(manager);
-
-                // Must manually load REI so it has the custom model data correct
-                if (CompatUtils.isReiLoaded()) {
-                    ReiIntegration.load();
-                }
             }
         });
         
@@ -81,7 +75,7 @@ public class SlimefunEssentials implements ClientModInitializer {
 
             ClientChunkEvents.CHUNK_UNLOAD.register((world, chunk) -> ResourceLoader.removePlacedChunk(chunk.getPos()));
 
-            ClientPlayNetworking.registerGlobalReceiver(Channels.BLOCK_CHANNEL, (payload, context) -> {
+            ClientPlayNetworking.registerGlobalReceiver(Payloads.BLOCK_CHANNEL, (payload, context) -> {
                 // If the id is a space that means it's no longer a slimefun block
                 if (payload.id().equals(" ")) {
                     ResourceLoader.removePlacedBlock(payload.pos());
@@ -96,7 +90,7 @@ public class SlimefunEssentials implements ClientModInitializer {
 
         if (ModConfig.autoToggleAddons()) {
             final List<String> normalAddons = new ArrayList<>();
-            ClientPlayNetworking.registerGlobalReceiver(Channels.ADDON_CHANNEL, (payload, context) -> {
+            ClientPlayNetworking.registerGlobalReceiver(Payloads.ADDON_CHANNEL, (payload, context) -> {
                 if (payload.addon().equals("clear")) {
                     normalAddons.addAll(ModConfig.getAddons());
                     ModConfig.getAddons().clear();
@@ -116,7 +110,7 @@ public class SlimefunEssentials implements ClientModInitializer {
         }
 
         if (ModConfig.autoManageItems()) {
-            ClientPlayNetworking.registerGlobalReceiver(Channels.ITEM_CHANNEL, (payload, context) -> {
+            ClientPlayNetworking.registerGlobalReceiver(Payloads.ITEM_CHANNEL, (payload, context) -> {
                 ResourceLoader.blacklistItem(payload.id());
             });
 
