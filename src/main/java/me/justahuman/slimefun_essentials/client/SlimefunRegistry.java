@@ -15,7 +15,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.server.packs.resources.ResourceManager;
-import net.minecraft.server.packs.VanillaPackResources;
 import net.minecraft.resources.Identifier;
 
 import java.io.IOException;
@@ -70,10 +69,13 @@ public class SlimefunRegistry {
     }
 
     /**
-     * 从资源包加载所有 Slimefun 数据（物品 + 自定义模型）
+     * 从资源包加载所有 Slimefun 数据
      */
     public static void loadResources(ResourceManager manager) {
         loadItems(manager);
+        loadLabels(manager);
+        loadRecipes(manager);
+        loadItemGroups(manager);
         loadItemModels();
     }
 
@@ -189,5 +191,85 @@ public class SlimefunRegistry {
     @NonNull
     public static Set<String> getVanillaItems() {
         return Collections.unmodifiableSet(VANILLA_ITEMS);
+    }
+
+    /**
+     * 从 "slimefun/labels" 目录加载配方标签
+     */
+    public static void loadLabels(ResourceManager manager) {
+        SlimefunLabel.clear();
+        for (Map.Entry<Identifier, Resource> entry : manager.listResources("slimefun/labels", Utils::filterResources).entrySet()) {
+            loadLabelsFromResource(entry.getValue());
+        }
+    }
+
+    /**
+     * 从单个资源加载配方标签
+     */
+    public static void loadLabelsFromResource(Resource resource) {
+        final JsonObject labels = jsonObjectFromResource(resource);
+        if (labels == null) {
+            return;
+        }
+        for (String id : labels.keySet()) {
+            final JsonElement labelElement = labels.get(id);
+            if (labelElement instanceof JsonObject labelObject) {
+                SlimefunLabel.deserialize(id, labelObject);
+            }
+        }
+    }
+
+    /**
+     * 从 "slimefun/recipes" 目录加载配方类别
+     */
+    public static void loadRecipes(ResourceManager manager) {
+        for (Map.Entry<Identifier, Resource> entry : manager.listResources("slimefun/recipes", Utils::filterResources).entrySet()) {
+            loadRecipesFromResource(entry.getValue());
+        }
+        RecipeCategory.finalizeCategories();
+    }
+
+    /**
+     * 从单个资源加载配方类别
+     */
+    public static void loadRecipesFromResource(Resource resource) {
+        final JsonObject recipes = jsonObjectFromResource(resource);
+        if (recipes == null) {
+            return;
+        }
+        for (String id : recipes.keySet()) {
+            final JsonElement categoryElement = recipes.get(id);
+            if (categoryElement instanceof JsonObject categoryObject) {
+                RecipeCategory.deserialize(id, categoryObject);
+            }
+        }
+    }
+
+    /**
+     * 从 "slimefun/item_groups" 目录加载 JEI 物品组
+     */
+    public static void loadItemGroups(ResourceManager manager) {
+        SlimefunItemGroup.clear();
+        for (Map.Entry<Identifier, Resource> entry : manager.listResources("slimefun/item_groups", Utils::filterResources).entrySet()) {
+            loadItemGroupsFromResource(entry.getKey(), entry.getValue());
+        }
+        SlimefunItemGroup.addParents();
+    }
+
+    /**
+     * 从单个资源加载物品组
+     */
+    public static void loadItemGroupsFromResource(Identifier identifier, Resource resource) {
+        final JsonObject itemGroups = jsonObjectFromResource(resource);
+        if (itemGroups == null) {
+            return;
+        }
+        final String addon = identifier.getNamespace();
+        for (String id : itemGroups.keySet()) {
+            final JsonElement groupElement = itemGroups.get(id);
+            if (groupElement instanceof JsonObject groupObject) {
+                SlimefunItemGroup.deserialize(addon, id, groupObject);
+            }
+        }
     }
 }

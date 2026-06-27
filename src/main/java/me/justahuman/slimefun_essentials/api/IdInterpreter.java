@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 
 public interface IdInterpreter<T> {
     default T interpretId(@NotNull RecipeComponent component, @NotNull String id, @NotNull T def) {
-        if (id.isEmpty() || id.isBlank()) {
+        if (id.isBlank()) {
             return def;
         }
 

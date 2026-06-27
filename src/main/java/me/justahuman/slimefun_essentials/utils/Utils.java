@@ -17,12 +17,12 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Utils {
+    public static final String ID = "slimefun_essentials";
     private static final Pattern PLACEHOLDER_PATTERN = Pattern.compile("%[a-zA-Z_]+%");
     public static final Set<String> HIDDEN_SF_IDS = Set.of("_UI_BACKGROUND", "_UI_INPUT_SLOT", "_UI_OUTPUT_SLOT");
 

@@ -1,0 +1,25 @@
+{
+  "slimefun_essentials.title": "Slimefun Essentials",
+
+  "slimefun_essentials.key_bind.open_config": "打開設定",
+
+  "slimefun_essentials.config.option.block_features": "啟用粘液科技方塊材質",
+  "slimefun_essentials.config.option.block_features.tooltip": "-> 啟用 MBP 拓展\n-> 啟用 Jade 拓展",
+  "slimefun_essentials.config.option.recipe_features": "啟用粘液科技配方",
+  "slimefun_essentials.config.option.recipe_features.tooltip": "-> 啟用 Jade 拓展\n-> 啟用 REI 拓展\n-> 啟用 EMI 拓展",
+
+  "slimefun_essentials.config.option.resource_pack_features": "啟用資源包支援",
+  "slimefun_essentials.config.option.resource_pack_features.tooltip": "-> 從資源包載入粘液科技物品和自訂模型",
+
+  "slimefun_essentials.config.option.auto_toggle_addons": "自動啟用附屬插件",
+  "slimefun_essentials.config.option.auto_toggle_addons.tooltip": "是否自動啟用/停用附屬插件的支援？",
+  "slimefun_essentials.config.option.addons": "啟用的粘液科技附屬插件支援：",
+  "slimefun_essentials.config.option.addons.tooltip": "新增/移除您想要支援的附屬插件",
+
+  "slimefun_essentials.recipes.category.slimefun": "%s",
+  "slimefun_essentials.recipes.time": "%s 秒 (%s 刻)",
+  "slimefun_essentials.recipes.energy.use": "使用 %sJ",
+  "slimefun_essentials.recipes.energy.generate": "產生 %sJ",
+  "slimefun_essentials.recipes.label.day": "您必須在白天才能使用此方塊合成該物品！",
+  "slimefun_essentials.recipes.label.night": "您必須在夜晚才能使用此方塊合成該物品！"
+}

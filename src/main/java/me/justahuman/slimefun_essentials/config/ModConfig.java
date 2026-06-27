@@ -7,7 +7,6 @@ import lombok.Setter;
 import me.justahuman.slimefun_essentials.SlimefunEssentials;
 import me.justahuman.slimefun_essentials.utils.JsonUtils;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.client.Minecraft;
 
 import java.io.File;
 import java.io.FileReader;
