@@ -15,6 +15,9 @@
   "slimefun_essentials.config.option.recipe_features": "Enable Recipe Features",
   "slimefun_essentials.config.option.recipe_features.tooltip": "-> Enables Jei, Rei, & Emi compatibility",
 
+  "slimefun_essentials.config.option.resource_pack_features": "Enable Resource Pack Features",
+  "slimefun_essentials.config.option.resource_pack_features.tooltip": "-> Loads Slimefun items and custom models from resource packs",
+
   "slimefun_essentials.config.category.visual": "Visual",
   "slimefun_essentials.config.option.replace_item_identifiers": "Replace Item Ids",
   "slimefun_essentials.config.option.replace_item_identifiers.tooltip": "E.g. \"minecraft:gunpowder\" -> \"slimefun:pure_ore_cluster\"",

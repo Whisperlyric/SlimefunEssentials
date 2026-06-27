@@ -27,6 +27,12 @@ public class ConfigScreen {
                 .setSaveConsumer(ModConfig::setRecipeFeatures)
                 .build());
 
+        generalCategory.addEntry(entryBuilder.startBooleanToggle(Component.translatable("slimefun_essentials.config.option.resource_pack_features"), ModConfig.resourcePackFeatures())
+                .setDefaultValue(true)
+                .setTooltip(Component.translatable("slimefun_essentials.config.option.resource_pack_features.tooltip"))
+                .setSaveConsumer(ModConfig::setResourcePackFeatures)
+                .build());
+
         /* Visual */
 
         visualCategory.addEntry(entryBuilder.startBooleanToggle(Component.translatable("slimefun_essentials.config.option.replace_item_identifiers"), ModConfig.replaceItemIdentifiers())

@@ -7,6 +7,10 @@
   "slimefun_essentials.config.option.block_features.tooltip": "-> 开启 MBP 拓展\n-> 开启玉（Jade）拓展",
   "slimefun_essentials.config.option.recipe_features": "添加粘液科技配方",
   "slimefun_essentials.config.option.recipe_features.tooltip": "-> 开启玉（Jade）拓展\n-> 开启 REI 拓展\n-> 开启 EMI 拓展",
+
+  "slimefun_essentials.config.option.resource_pack_features": "启用资源包支持",
+  "slimefun_essentials.config.option.resource_pack_features.tooltip": "-> 从资源包加载粘液科技物品和自定义模型",
+
   "slimefun_essentials.config.option.auto_toggle_addons": "自动添加附属插件",
   "slimefun_essentials.config.option.auto_toggle_addons.tooltip": "是否自动启用/禁用附属插件的支持？",
   "slimefun_essentials.config.option.addons": "启用的粘液科技附属插件支持：",

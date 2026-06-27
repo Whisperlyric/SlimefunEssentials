@@ -19,7 +19,10 @@ import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
+import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
 import net.minecraft.client.KeyMapping;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.resources.ResourceManagerReloadListener;
 import net.minecraft.resources.Identifier;
 import org.lwjgl.glfw.GLFW;
 import org.slf4j.Logger;
@@ -40,6 +43,12 @@ public class SlimefunEssentials implements ClientModInitializer {
         PayloadTypeRegistry.clientboundPlay().register(RecipeCategoriesPayload.TYPE, RecipeCategoriesPayload.CODEC);
         PayloadTypeRegistry.clientboundPlay().register(RecipeDisplayPayload.TYPE, RecipeDisplayPayload.CODEC);
         ModConfig.loadConfig();
+
+        if (ModConfig.resourcePackFeatures()) {
+            ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloadListener(id("reload_listener"), (ResourceManagerReloadListener) manager ->
+                SlimefunRegistry.loadResources(manager)
+            );
+        }
 
         ClientPlayNetworking.registerGlobalReceiver(LoadingStatePayload.TYPE, (payload, context) -> Payloads.expect(payload));
         ClientPlayNetworking.registerGlobalReceiver(ItemsPayload.TYPE, (payload, context) -> {});

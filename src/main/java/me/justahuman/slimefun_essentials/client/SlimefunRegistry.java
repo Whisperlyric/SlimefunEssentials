@@ -9,6 +9,7 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
 import me.justahuman.slimefun_essentials.SlimefunEssentials;
+import me.justahuman.slimefun_essentials.utils.JsonUtils;
 import me.justahuman.slimefun_essentials.utils.Utils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.ItemStack;
@@ -21,9 +22,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
@@ -63,6 +67,60 @@ public class SlimefunRegistry {
             SLIMEFUN_ITEMS.put(entry.getKey(), new SlimefunItemStack(entry.getKey(), entry.getValue()));
             VANILLA_ITEMS.add(entry.getValue().getItem().toString());
         }
+    }
+
+    /**
+     * 从资源包加载所有 Slimefun 数据（物品 + 自定义模型）
+     */
+    public static void loadResources(ResourceManager manager) {
+        loadItems(manager);
+        loadItemModels();
+    }
+
+    /**
+     * 从 "slimefun/items" 目录加载 Slimefun 物品
+     */
+    public static void loadItems(ResourceManager manager) {
+        for (Map.Entry<Identifier, Resource> entry : manager.listResources("slimefun/items", Utils::filterResources).entrySet()) {
+            loadItemsFromResource(entry.getValue());
+        }
+        sortItems();
+    }
+
+    /**
+     * 从单个资源加载 Slimefun 物品
+     */
+    public static void loadItemsFromResource(Resource resource) {
+        final JsonObject items = jsonObjectFromResource(resource);
+        if (items == null) {
+            return;
+        }
+        for (String id : items.keySet()) {
+            final JsonElement itemElement = items.get(id);
+            if (!(itemElement instanceof JsonObject itemObject) || !itemObject.has("id")) {
+                continue;
+            }
+            final ItemStack itemStack = JsonUtils.deserializeItem(itemObject);
+            if (itemStack.isEmpty()) {
+                continue;
+            }
+            SLIMEFUN_ITEMS.put(id, new SlimefunItemStack(id, itemStack));
+            VANILLA_ITEMS.add(itemStack.getItem().toString());
+        }
+    }
+
+    /**
+     * 按 ID 排序 Slimefun 物品
+     */
+    private static void sortItems() {
+        final Map<String, SlimefunItemStack> sorted = new LinkedHashMap<>();
+        final List<String> ids = new ArrayList<>(SLIMEFUN_ITEMS.keySet());
+        ids.sort(Comparator.naturalOrder());
+        for (String id : ids) {
+            sorted.put(id, SLIMEFUN_ITEMS.get(id));
+        }
+        SLIMEFUN_ITEMS.clear();
+        SLIMEFUN_ITEMS.putAll(sorted);
     }
 
     public static void loadItemModels() {
