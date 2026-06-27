@@ -1,0 +1,66 @@
+package me.justahuman.slimefun_essentials.compat.jei;
+
+import me.justahuman.slimefun_essentials.api.IdInterpreter;
+import me.justahuman.slimefun_essentials.client.SlimefunItemStack;
+import me.justahuman.slimefun_essentials.client.RecipeComponent;
+import mezz.jei.api.gui.builder.IRecipeSlotBuilder;
+import mezz.jei.fabric.ingredients.fluid.JeiFluidIngredient;
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.tags.TagKey;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class JeiRecipeInterpreter implements IdInterpreter<Object> {
+    public void addIngredient(IRecipeSlotBuilder slotBuilder, ItemStack itemStack) {
+        slotBuilder.add(itemStack);
+    }
+
+    public void addIngredients(IRecipeSlotBuilder slotBuilder, RecipeComponent component) {
+        for (String id : component.getMultiId() != null ? component.getMultiId() : List.of(component.getId())) {
+            addIngredientObject(slotBuilder, interpretId(component, id, ItemStack.EMPTY));
+        }
+    }
+
+    public void addIngredientObject(IRecipeSlotBuilder slotBuilder, Object ingredient) {
+        if (ingredient instanceof List<?> list) {
+            for (Object object : list) {
+                addIngredientObject(slotBuilder, object);
+            }
+        } else if (ingredient instanceof ItemStack itemStack) {
+            slotBuilder.add(itemStack);
+        } else if (ingredient instanceof SlimefunItemStack slimefunItemStack) {
+            slotBuilder.add(slimefunItemStack.itemStack());
+        } else if (ingredient instanceof JeiFluidIngredient fluidStack) {
+            slotBuilder.add(fluidStack.getFluidVariant().getFluid(), fluidStack.getAmount());
+        }
+    }
+
+    @Override
+    public Object fromTag(float chance, TagKey<Item> tagKey, int amount, Object def) {
+        List<ItemStack> list = new ArrayList<>();
+        BuiltInRegistries.ITEM.getTagOrEmpty(tagKey).forEach(holder -> list.add(new ItemStack(holder.value(), amount)));
+        return list.isEmpty() ? def : list;
+    }
+
+    @Override
+    public Object fromItemStack(float chance, ItemStack itemStack, int amount, Object def) {
+        itemStack.setCount(amount);
+        return itemStack;
+    }
+
+    @Override
+    public Object fromFluid(float chance, FluidVariant fluid, int amount, Object def) {
+        return new JeiFluidIngredient(fluid, amount);
+    }
+
+    @Override
+    public Object fromEntityType(float chance, EntityType<?> entityType, boolean baby, int amount, Object def) {
+        // TODO: add support for entities
+        return def;
+    }
+}

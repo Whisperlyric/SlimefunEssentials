@@ -1,0 +1,23 @@
+{
+  "slimefun_essentials.title": "Slimefun Essentials (SFE)",
+
+  "slimefun_essentials.toast.receiving_expected_packets": "Receiving SFE Packets",
+  "slimefun_essentials.toast.receiving_expected_packets.description": "%s/%s, %s/%s, %s/%s, %s/%s",
+  "slimefun_essentials.toast.received_expected_packets": "Received SFE Packets",
+  "slimefun_essentials.toast.received_expected_packets.description": "Reloading recipe viewer...",
+  "slimefun_essentials.toast.received_unexpected_packets": "Received unexpected packets",
+  "slimefun_essentials.toast.received_unexpected_packets.description": "SFE will not load!",
+
+  "slimefun_essentials.reloading": "Reloading...",
+
+  "slimefun_essentials.key_bind.open_config": "Open Config",
+  "slimefun_essentials.config.category.general": "General",
+  "slimefun_essentials.config.option.recipe_features": "Enable Recipe Features",
+  "slimefun_essentials.config.option.recipe_features.tooltip": "-> Enables Jei, Rei, & Emi compatibility",
+
+  "slimefun_essentials.config.category.visual": "Visual",
+  "slimefun_essentials.config.option.replace_item_identifiers": "Replace Item Ids",
+  "slimefun_essentials.config.option.replace_item_identifiers.tooltip": "E.g. \"minecraft:gunpowder\" -> \"slimefun:pure_ore_cluster\"",
+  "slimefun_essentials.config.option.hide_background_tooltips": "Hide Background Tooltips",
+  "slimefun_essentials.config.option.hide_background_tooltips.tooltip": "Hides the tooltip of items meant just as background/filler\nE.g. the grey glass panes in the Slimefun guide."
+}

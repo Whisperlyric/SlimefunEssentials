@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.justahuman.slimefun_essentials.mixins",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "jei.ClientLifecycleHandlerMixin",
+    "jei.InterpretersAccessor",
+    "minecraft.ItemStackMixin",
+    "minecraft.SlotMixin",
+    "minecraft.TextTooltipAccessor"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
