@@ -45,9 +45,11 @@ public class SlimefunEssentials implements ClientModInitializer {
         ModConfig.loadConfig();
 
         if (ModConfig.resourcePackFeatures()) {
-            ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloadListener(id("reload_listener"), (ResourceManagerReloadListener) manager ->
-                SlimefunRegistry.loadResources(manager)
-            );
+            ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloadListener(id("reload_listener"), (ResourceManagerReloadListener) manager -> {
+                SlimefunRegistry.loadResources(manager);
+                
+                Payloads.markMetExpected();
+            });
         }
 
         ClientPlayNetworking.registerGlobalReceiver(LoadingStatePayload.TYPE, (payload, context) -> Payloads.expect(payload));

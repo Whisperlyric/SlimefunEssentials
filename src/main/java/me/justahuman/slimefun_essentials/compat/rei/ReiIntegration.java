@@ -81,7 +81,7 @@ public class ReiIntegration implements REIClientPlugin {
         }
     }
 
-    private static void reload() {
+    public static void reload() {
         Minecraft client = Minecraft.getInstance();
         client.execute(() -> {
             AtomicBoolean started = new AtomicBoolean(false);

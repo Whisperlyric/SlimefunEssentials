@@ -76,6 +76,19 @@ public class Payloads {
         metExpected = false;
     }
 
+    /**
+     * 手动标记已满足期望（用于纯客户端资源包模式）
+     * 触发已注册的 onMeetExpected 回调（JEI/REI 在初始化时注册的 reload 回调）
+     */
+    public static void markMetExpected() {
+        if (!metExpected && EXPECTED_PACKETS.isEmpty()) {
+            metExpected = true;
+            RecipeCategory.finalizeCategories();
+            onMeetExpected.run();
+            onMeetExpected = showToast(RECEIVED_TOAST_TYPE);
+        }
+    }
+
     public static void expect(LoadingStatePayload payload) {
         EXPECTED_PACKETS.clear();
         EXPECTED_PACKETS.put(ComponentTypePayload.class, payload.typePackets());

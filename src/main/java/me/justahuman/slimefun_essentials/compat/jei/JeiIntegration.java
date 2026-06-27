@@ -146,7 +146,7 @@ public class JeiIntegration implements IModPlugin {
         runtimeAvailable = false;
     }
 
-    private static void reload() {
+    public static void reload() {
         Minecraft client = Minecraft.getInstance();
         client.execute(() -> {
             AtomicBoolean started = new AtomicBoolean(false);

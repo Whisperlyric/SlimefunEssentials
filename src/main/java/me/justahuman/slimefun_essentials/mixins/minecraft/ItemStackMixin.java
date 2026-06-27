@@ -26,7 +26,7 @@ public abstract class ItemStackMixin {
     @Shadow public abstract DataComponentMap getComponents();
 
     @Inject(method = "getTooltipLines", at = @At(value = "RETURN"))
-    public void changeTooltip(Item.TooltipContext context, Player player, TooltipFlag tooltipFlag, CallbackInfoReturnable<List<Component>> cir) {
+    public void changeTooltip(Item.TooltipContext context, Player player, TooltipFlag type, CallbackInfoReturnable<List<Component>> cir) {
         final String guideMode = Utils.getGuideMode(getComponents());
         final String id = guideMode == null ? Utils.getSlimefunId(getComponents()) : guideMode + "_guide";
         if (id == null) {
