@@ -23,6 +23,7 @@ public class RecipeCategory {
     private static final Map<String, RecipeCategory> EMPTY_CATEGORIES = new HashMap<>();
     private static final Map<String, String> TO_COPY = new HashMap<>();
 
+    private final String addon;
     private final String id;
     private final ItemStack itemStack;
     private final String display;
@@ -31,13 +32,18 @@ public class RecipeCategory {
     private final List<SlimefunRecipe> childRecipes;
     private SlimefunRecipe recipe = null;
 
-    public RecipeCategory(String id, ItemStack itemStack, String display, Integer speed, Integer energy, List<SlimefunRecipe> childRecipes) {
+    public RecipeCategory(String addon, String id, ItemStack itemStack, String display, Integer speed, Integer energy, List<SlimefunRecipe> childRecipes) {
+        this.addon = addon;
         this.id = id;
         this.itemStack = itemStack;
         this.display = display;
         this.speed = speed;
         this.energy = energy;
         this.childRecipes = childRecipes;
+    }
+
+    public String addon() {
+        return this.addon;
     }
 
     public String id() {
@@ -68,7 +74,7 @@ public class RecipeCategory {
         return this.childRecipes;
     }
 
-    public static void deserialize(ByteArrayDataInput input) {
+    public static void deserialize(String addon, ByteArrayDataInput input) {
         final String id = input.readUTF();
         try {
             final String display = DataUtils.get(input, "dynamic");
@@ -77,7 +83,7 @@ public class RecipeCategory {
             final Integer energy = DataUtils.get(input, (Integer) null);
             final List<SlimefunRecipe> recipes = new ArrayList<>();
 
-            final RecipeCategory category = new RecipeCategory(id, itemStack, display, speed, energy, recipes);
+            final RecipeCategory category = new RecipeCategory(addon, id, itemStack, display, speed, energy, recipes);
             int size = input.readInt();
             for (int i = 0; i < size; i++) {
                 recipes.add(SlimefunRecipe.deserialize(category, input, energy));
@@ -90,14 +96,14 @@ public class RecipeCategory {
         }
     }
 
-    public static void deserialize(String id, JsonObject categoryObject) {
+    public static void deserialize(String addon, String id, JsonObject categoryObject) {
         final String display = JsonUtils.get(categoryObject, "display", "dynamic");
         final ItemStack itemStack = JsonUtils.deserializeItem(JsonUtils.get(categoryObject, "item", new JsonObject()));
         final Integer speed = JsonUtils.get(categoryObject, "speed", (Integer) null);
         final Integer energy = JsonUtils.get(categoryObject, "energy", (Integer) null);
         final List<SlimefunRecipe> recipes = new ArrayList<>();
 
-        final RecipeCategory category = new RecipeCategory(id, itemStack, display, speed, energy, recipes);
+        final RecipeCategory category = new RecipeCategory(addon, id, itemStack, display, speed, energy, recipes);
         for (JsonElement recipeElement : JsonUtils.get(categoryObject, "recipes", new JsonArray())) {
             if (recipeElement instanceof JsonObject recipeObject) {
                 recipes.add(SlimefunRecipe.deserialize(category, recipeObject, energy));
@@ -178,7 +184,7 @@ public class RecipeCategory {
             return EMPTY_CATEGORIES.get(id);
         } else if (SlimefunRegistry.getSlimefunItem(id) != null) {
             final SlimefunItemStack itemStack = SlimefunRegistry.getSlimefunItem(id);
-            final RecipeCategory category = new RecipeCategory(id, itemStack.itemStack(), "none", null, null, new ArrayList<>());
+            final RecipeCategory category = new RecipeCategory(itemStack.addon(), id, itemStack.itemStack(), "none", null, null, new ArrayList<>());
             EMPTY_CATEGORIES.put(id, category);
         }
         return null;

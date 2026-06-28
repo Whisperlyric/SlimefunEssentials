@@ -6,6 +6,7 @@
   "client": [
     "jei.ClientLifecycleHandlerMixin",
     "jei.InterpretersAccessor",
+    "jei.ItemStackHelperMixin",
     "minecraft.ItemStackMixin",
     "minecraft.SlotMixin",
     "minecraft.TextTooltipAccessor"

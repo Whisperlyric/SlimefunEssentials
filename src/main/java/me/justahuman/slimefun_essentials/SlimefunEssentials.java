@@ -4,6 +4,7 @@ import me.justahuman.slimefun_essentials.api.DisplayComponentType;
 import me.justahuman.slimefun_essentials.api.RecipeDisplay;
 import me.justahuman.slimefun_essentials.client.RecipeCategory;
 import me.justahuman.slimefun_essentials.client.SlimefunRegistry;
+import me.justahuman.slimefun_essentials.client.payload.ClientConfigPayload;
 import me.justahuman.slimefun_essentials.client.payload.ComponentTypePayload;
 import me.justahuman.slimefun_essentials.client.payload.ItemsPayload;
 import me.justahuman.slimefun_essentials.client.payload.LoadingStatePayload;
@@ -42,21 +43,49 @@ public class SlimefunEssentials implements ClientModInitializer {
         PayloadTypeRegistry.clientboundPlay().register(ComponentTypePayload.TYPE, ComponentTypePayload.CODEC);
         PayloadTypeRegistry.clientboundPlay().register(RecipeCategoriesPayload.TYPE, RecipeCategoriesPayload.CODEC);
         PayloadTypeRegistry.clientboundPlay().register(RecipeDisplayPayload.TYPE, RecipeDisplayPayload.CODEC);
+        // 客户端 → 服务端：上报 receiveServerPayloads 配置
+        PayloadTypeRegistry.serverboundPlay().register(ClientConfigPayload.TYPE, ClientConfigPayload.CODEC);
         ModConfig.loadConfig();
 
         if (ModConfig.resourcePackFeatures()) {
             ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloadListener(id("reload_listener"), (ResourceManagerReloadListener) manager -> {
                 SlimefunRegistry.loadResources(manager);
-                
-                Payloads.markMetExpected();
+                // 资源包加载完成后，若不接收服务端 Payload，则尝试从缓存补全并直接标记完成
+                if (!ModConfig.receiveServerPayloads()) {
+                    SlimefunRegistry.loadFromCache();
+                    Payloads.markMetExpected();
+                } else if (SlimefunRegistry.loadFromCacheIfMissing()) {
+                    // 缓存作为资源包模式的补充：若资源包未提供数据且缓存存在，立即用缓存显示
+                    Payloads.markMetExpected();
+                }
             });
+        } else if (!ModConfig.receiveServerPayloads()) {
+            // 既无资源包模式也不接收 Payload：仅依赖缓存
+            // 此时无 reload listener，需在登录后从缓存加载
         }
 
-        ClientPlayNetworking.registerGlobalReceiver(LoadingStatePayload.TYPE, (payload, context) -> Payloads.expect(payload));
+        ClientPlayNetworking.registerGlobalReceiver(LoadingStatePayload.TYPE, (payload, context) -> {
+            // 服务端即将发送 Payload，清除缓存中可能过期的同 type 数据
+            if (!ModConfig.receiveServerPayloads()) {
+                return;
+            }
+            Payloads.expect(payload);
+        });
         ClientPlayNetworking.registerGlobalReceiver(ItemsPayload.TYPE, (payload, context) -> {});
         ClientPlayNetworking.registerGlobalReceiver(ComponentTypePayload.TYPE, (payload, context) -> {});
         ClientPlayNetworking.registerGlobalReceiver(RecipeCategoriesPayload.TYPE, (payload, context) -> {});
         ClientPlayNetworking.registerGlobalReceiver(RecipeDisplayPayload.TYPE, (payload, context) -> {});
+
+        // 登录后上报配置给服务端；若不接收 Payload，直接从缓存加载并标记完成
+        ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> {
+            sender.sendPacket(new ClientConfigPayload(ModConfig.receiveServerPayloads()));
+            if (!ModConfig.receiveServerPayloads() && !ModConfig.resourcePackFeatures()) {
+                client.execute(() -> {
+                    SlimefunRegistry.loadFromCache();
+                    Payloads.markMetExpected();
+                });
+            }
+        });
 
         ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> {
             RecipeCategory.clear();

@@ -1,7 +1,9 @@
 package me.justahuman.slimefun_essentials.client.payload;
 
 import me.justahuman.slimefun_essentials.SlimefunEssentials;
+import me.justahuman.slimefun_essentials.client.PayloadCache;
 import me.justahuman.slimefun_essentials.client.SlimefunRegistry;
+import me.justahuman.slimefun_essentials.config.ModConfig;
 import me.justahuman.slimefun_essentials.utils.DataUtils;
 import me.justahuman.slimefun_essentials.utils.Payloads;
 import net.minecraft.world.item.ItemStack;
@@ -17,6 +19,11 @@ public class ItemsPayload implements CustomPacketPayload {
     public static final CustomPacketPayload.Type<ItemsPayload> TYPE = Payloads.ITEM_CHANNEL;
     public static final StreamCodec<RegistryFriendlyByteBuf, ItemsPayload> CODEC =
             Payloads.newSplitCodec(input -> {
+                if (!ModConfig.receiveServerPayloads()) {
+                    Payloads.LAST_DECODED_BYTES.remove();
+                    return EMPTY;
+                }
+                String addon = input.readUTF();
                 int size = input.readInt();
                 Map<String, ItemStack> items = new LinkedHashMap<>(size);
                 for (int i = 0; i < size; i++) {
@@ -27,14 +34,11 @@ public class ItemsPayload implements CustomPacketPayload {
                         SlimefunEssentials.LOGGER.error("Failed to deserialize slimefun item: {}", id, e);
                     }
                 }
-                SlimefunRegistry.addItems(items);
+                SlimefunRegistry.addItems(addon, items);
+                PayloadCache.write(PayloadCache.Type.ITEMS, addon, Payloads.LAST_DECODED_BYTES.get());
+                Payloads.LAST_DECODED_BYTES.remove();
                 return EMPTY;
             }, EMPTY);
-
-    // @Override
-    // public Type<? extends CustomPacketPayload> type() {
-    //     return Payloads.ITEM_CHANNEL;
-    // }
 
     @Override
     public Type<? extends CustomPacketPayload> type() {

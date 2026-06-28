@@ -28,7 +28,7 @@ public record BasicDisplay(
         return components;
     }
 
-    public static void deserialize(ByteArrayDataInput input) {
+    public static String deserialize(ByteArrayDataInput input) {
         String id = input.readUTF();
         try {
             int width = input.readInt();
@@ -44,6 +44,7 @@ public record BasicDisplay(
         } catch (Exception e) {
             SlimefunEssentials.LOGGER.error("Failed to deserialize BasicDisplay: {}", id, e);
         }
+        return id;
     }
 
     public static void deserialize(String id, JsonObject displayObject) {

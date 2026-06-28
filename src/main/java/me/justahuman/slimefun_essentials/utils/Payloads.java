@@ -4,6 +4,7 @@ import com.google.common.io.ByteArrayDataInput;
 import com.google.common.io.ByteStreams;
 import me.justahuman.slimefun_essentials.SlimefunEssentials;
 import me.justahuman.slimefun_essentials.client.RecipeCategory;
+import me.justahuman.slimefun_essentials.client.payload.ClientConfigPayload;
 import me.justahuman.slimefun_essentials.client.payload.ComponentTypePayload;
 import me.justahuman.slimefun_essentials.client.payload.ItemsPayload;
 import me.justahuman.slimefun_essentials.client.payload.LoadingStatePayload;
@@ -29,6 +30,7 @@ public class Payloads {
     public static final CustomPacketPayload.Type<RecipeDisplayPayload> RECIPE_DISPLAY_CHANNEL = newChannel("recipe_displays");
     public static final CustomPacketPayload.Type<RecipeCategoriesPayload> RECIPE_CATEGORIES_CHANNEL = newChannel("recipe_categories");
     public static final CustomPacketPayload.Type<LoadingStatePayload> LOADING_STATE_CHANNEL = newChannel("loading_state");
+    public static final CustomPacketPayload.Type<ClientConfigPayload> CLIENT_CONFIG_CHANNEL = newChannel("client_config");
 
     private static final Type RECEIVING_TOAST_TYPE = new Type("receiving_expected_packets");
     private static final Type RECEIVED_TOAST_TYPE = new Type("received_expected_packets");
@@ -160,17 +162,30 @@ public class Payloads {
                 }
 
                 if (complete) {
-                    byte[] totalBytes = new byte[pieces * SPLIT_MESSAGE_SIZE];
-                    for (int i = 0; i < pieces; i++) {
-                        System.arraycopy(piecesBytes[i], 0, totalBytes, i * SPLIT_MESSAGE_SIZE, piecesBytes[i].length);
+                    int totalLength = 0;
+                    for (byte[] p : piecesBytes) {
+                        totalLength += p.length;
+                    }
+                    byte[] totalBytes = new byte[totalLength];
+                    int offset = 0;
+                    for (byte[] p : piecesBytes) {
+                        System.arraycopy(p, 0, totalBytes, offset, p.length);
+                        offset += p.length;
                     }
                     received.remove(id);
+                    LAST_DECODED_BYTES.set(totalBytes);
                     return decoder.apply(ByteStreams.newDataInput(totalBytes));
                 }
                 return empty;
             }
         };
     }
+
+    /**
+     * 最近一次完整重组的 Payload 字节，用于缓存写入。
+     * split codec 重组完成时设置，Payload 处理后应消费并清理。
+     */
+    public static final ThreadLocal<byte[]> LAST_DECODED_BYTES = new ThreadLocal<>();
 
     public static <P extends CustomPacketPayload>StreamCodec<RegistryFriendlyByteBuf, P> newCodec(Function<ByteArrayDataInput, P> decoder) {
         return StreamCodec.of((value, buf) -> {}, buf -> {

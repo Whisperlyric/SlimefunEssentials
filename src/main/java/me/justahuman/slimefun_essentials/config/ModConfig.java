@@ -20,7 +20,8 @@ public class ModConfig {
     private static @Setter boolean recipeFeatures = true;
     private static @Setter boolean replaceItemIdentifiers = true;
     private static @Setter boolean hideBackgroundTooltips = true;
-    private static @Setter boolean resourcePackFeatures = true;
+    private static @Setter boolean resourcePackFeatures = false;
+    private static @Setter boolean receiveServerPayloads = true;
     
     public static void loadConfig() {
         final JsonObject root = new JsonObject();
@@ -37,6 +38,7 @@ public class ModConfig {
         loadConfigOption(() -> replaceItemIdentifiers = JsonUtils.get(root, "replace_item_identifiers", true, true));
         loadConfigOption(() -> hideBackgroundTooltips = JsonUtils.get(root, "hide_background_tooltips", true, true));
         loadConfigOption(() -> resourcePackFeatures = JsonUtils.get(root, "resource_pack_features", true, true));
+        loadConfigOption(() -> receiveServerPayloads = JsonUtils.get(root, "receive_server_payloads", true, true));
     }
 
     private static void loadConfigOption(Runnable runnable) {
@@ -54,6 +56,7 @@ public class ModConfig {
         root.addProperty("replace_item_identifiers", replaceItemIdentifiers);
         root.addProperty("hide_background_tooltips", hideBackgroundTooltips);
         root.addProperty("resource_pack_features", resourcePackFeatures);
+        root.addProperty("receive_server_payloads", receiveServerPayloads);
 
         try (final FileWriter fileWriter = new FileWriter(getConfigFile())) {
             gson.toJson(root, fileWriter);
@@ -77,6 +80,9 @@ public class ModConfig {
     }
     public static boolean resourcePackFeatures() {
         return resourcePackFeatures;
+    }
+    public static boolean receiveServerPayloads() {
+        return receiveServerPayloads;
     }
 
     public static File getConfigFile() {

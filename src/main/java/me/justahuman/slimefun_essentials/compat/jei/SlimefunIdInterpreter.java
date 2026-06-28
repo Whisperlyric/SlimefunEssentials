@@ -1,5 +1,7 @@
 package me.justahuman.slimefun_essentials.compat.jei;
 
+import me.justahuman.slimefun_essentials.client.SlimefunItemStack;
+import me.justahuman.slimefun_essentials.client.SlimefunRegistry;
 import me.justahuman.slimefun_essentials.utils.Utils;
 import mezz.jei.api.ingredients.subtypes.ISubtypeInterpreter;
 import mezz.jei.api.ingredients.subtypes.UidContext;
@@ -19,6 +21,10 @@ public class SlimefunIdInterpreter implements ISubtypeInterpreter<ItemStack> {
         if (sfId == null) {
             return this.defaultInterpreter == null ? null : this.defaultInterpreter.getSubtypeData(ingredient, context);
         }
-        return sfId;
+        final SlimefunItemStack slimefunItemStack = SlimefunRegistry.getSlimefunItem(sfId);
+        if (slimefunItemStack != null) {
+            return slimefunItemStack.addon() + ":" + sfId;
+        }
+        return "slimefun:" + sfId;
     }
 }

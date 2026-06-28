@@ -54,11 +54,11 @@ public interface DisplayComponentType {
         return COMPONENT_TYPES.get(id);
     }
 
-    static void deserialize(ByteArrayDataInput input) {
+    static String deserialize(ByteArrayDataInput input) {
         String id = input.readUTF();
         if (COMPONENT_TYPES.containsKey(id)) {
             // TODO: ??
-            return;
+            return id;
         }
 
         try {
@@ -86,6 +86,7 @@ public interface DisplayComponentType {
         } catch (Exception e) {
             SlimefunEssentials.LOGGER.error("Failed to deserialize DisplayComponentType: {}", id, e);
         }
+        return id;
     }
 
     static void deserialize(String id, JsonObject type) {
