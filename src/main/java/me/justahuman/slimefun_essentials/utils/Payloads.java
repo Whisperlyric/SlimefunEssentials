@@ -138,11 +138,16 @@ public class Payloads {
 
             @Override
             public P decode(RegistryFriendlyByteBuf buf) {
-                PACKET_COUNTS.compute(empty.getClass(), (k, v) -> v == null ? 1 : v + 1);
-
                 byte[] bytes = new byte[buf.readableBytes()];
                 for (int i = 0; i < bytes.length; i++) {
                     bytes[i] = buf.readByte();
+                }
+
+                // 防御空包：服务端不应发送空 payload，但避免越界导致 DecoderException
+                if (bytes.length < 12) {
+                    SlimefunEssentials.LOGGER.warn("Received malformed split payload for {}: only {} bytes",
+                            empty.getClass().getSimpleName(), bytes.length);
+                    return empty;
                 }
 
                 int id = bytes[0] << 24 | bytes[1] << 16 | bytes[2] << 8 | bytes[3];
@@ -162,6 +167,8 @@ public class Payloads {
                 }
 
                 if (complete) {
+                    // 仅在完整重组后计数，避免分片导致计数虚高
+                    PACKET_COUNTS.compute(empty.getClass(), (k, v) -> v == null ? 1 : v + 1);
                     int totalLength = 0;
                     for (byte[] p : piecesBytes) {
                         totalLength += p.length;

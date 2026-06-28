@@ -79,7 +79,7 @@ public class SlimefunEssentials implements ClientModInitializer {
         // 登录后上报配置给服务端；若不接收 Payload，直接从缓存加载并标记完成
         ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> {
             sender.sendPacket(new ClientConfigPayload(ModConfig.receiveServerPayloads()));
-            if (!ModConfig.receiveServerPayloads() && !ModConfig.resourcePackFeatures()) {
+            if (!ModConfig.receiveServerPayloads()) {
                 client.execute(() -> {
                     SlimefunRegistry.loadFromCache();
                     Payloads.markMetExpected();
