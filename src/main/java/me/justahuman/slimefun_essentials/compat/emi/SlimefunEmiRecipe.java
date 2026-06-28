@@ -69,7 +69,7 @@ public class SlimefunEmiRecipe implements EmiRecipe {
             int height = component.height();
             List<ClientTooltipComponent> tooltip = component.tooltip(DrawMode.LIGHT, recipe);
             widgets.addDrawable(x, y, width, height, (draw, mouseX, mouseY, delta) ->
-                    component.draw(recipe, DrawMode.LIGHT, draw, x, y)).tooltip((mx, my) -> tooltip);
+                    component.draw(recipe, DrawMode.LIGHT, draw, 0, 0)).tooltip((mx, my) -> tooltip);
 
             if (component.type().equals("slot") || component.type().equals("large_slot")) {
                 int index = component.index();
