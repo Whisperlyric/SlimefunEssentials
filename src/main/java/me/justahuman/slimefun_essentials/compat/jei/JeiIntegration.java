@@ -47,7 +47,7 @@ public class JeiIntegration implements IModPlugin {
     }
 
     @Override
-    public void registerRuntime(IRuntimeRegistration registration) {
+    public void registerRuntime(@NotNull IRuntimeRegistration registration) {
         if (mustQueue || !Payloads.metExpected()) {
             mustQueue = true;
             return;
@@ -62,7 +62,7 @@ public class JeiIntegration implements IModPlugin {
     }
 
     @Override
-    public void registerItemSubtypes(ISubtypeRegistration iregistration) {
+    public void registerItemSubtypes(@NotNull ISubtypeRegistration iregistration) {
         if (mustQueue || !Payloads.metExpected()) {
             mustQueue = true;
             return;
@@ -82,14 +82,14 @@ public class JeiIntegration implements IModPlugin {
                 continue;
             }
 
-            ISubtypeInterpreter<ItemStack> oldInterpreter = interpreters.get(VanillaTypes.ITEM_STACK, itemStack);
-            ISubtypeInterpreter<ItemStack> newInterpreter = new SlimefunIdInterpreter(oldInterpreter);
+            ISubtypeInterpreter<@NotNull ItemStack> oldInterpreter = interpreters.get(VanillaTypes.ITEM_STACK, itemStack);
+            ISubtypeInterpreter<@NotNull ItemStack> newInterpreter = new SlimefunIdInterpreter(oldInterpreter);
             ((InterpretersAccessor) interpreters).getMap().put(item, newInterpreter);
         }
     }
 
     @Override
-    public void registerCategories(IRecipeCategoryRegistration registration) {
+    public void registerCategories(@NotNull IRecipeCategoryRegistration registration) {
         if (mustQueue || !Payloads.metExpected()) {
             mustQueue = true;
             return;
@@ -105,7 +105,7 @@ public class JeiIntegration implements IModPlugin {
     }
 
     @Override
-    public void registerRecipes(IRecipeRegistration registration) {
+    public void registerRecipes(@NotNull IRecipeRegistration registration) {
         if (mustQueue || !Payloads.metExpected()) {
             mustQueue = true;
             return;
@@ -117,7 +117,7 @@ public class JeiIntegration implements IModPlugin {
     }
 
     @Override
-    public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
+    public void registerRecipeCatalysts(@NotNull IRecipeCatalystRegistration registration) {
         if (mustQueue || !Payloads.metExpected()) {
             mustQueue = true;
             return;
@@ -129,7 +129,7 @@ public class JeiIntegration implements IModPlugin {
     }
 
     @Override
-    public void onRuntimeAvailable(IJeiRuntime jeiRuntime) {
+    public void onRuntimeAvailable(@NotNull IJeiRuntime jeiRuntime) {
         runtimeAvailable = true;
         if (mustQueue) {
             if (Payloads.metExpected()) {

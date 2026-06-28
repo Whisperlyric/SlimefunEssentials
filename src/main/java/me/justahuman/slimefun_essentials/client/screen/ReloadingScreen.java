@@ -4,6 +4,7 @@ import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Util;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.BooleanSupplier;
 
@@ -18,7 +19,7 @@ public class ReloadingScreen extends Screen {
     }
 
     @Override
-    public void extractRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta) {
+    public void extractRenderState(@NotNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta) {
         if (!isReloading.getAsBoolean()) {
             finished.run();
             return;

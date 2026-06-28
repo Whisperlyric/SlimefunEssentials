@@ -10,6 +10,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.TagKey;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +45,7 @@ public class ReiRecipeInterpreter implements IdInterpreter<EntryIngredient> {
     }
 
     @Override
-    public EntryIngredient fromTag(float chance, TagKey<Item> tagKey, int amount, EntryIngredient def) {
+    public EntryIngredient fromTag(float chance, TagKey<@NotNull Item> tagKey, int amount, EntryIngredient def) {
         return EntryIngredients.ofItemTag(tagKey);
     }
 

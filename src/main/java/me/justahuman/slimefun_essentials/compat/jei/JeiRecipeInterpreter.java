@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.tags.TagKey;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +42,7 @@ public class JeiRecipeInterpreter implements IdInterpreter<Object> {
     }
 
     @Override
-    public Object fromTag(float chance, TagKey<Item> tagKey, int amount, Object def) {
+    public Object fromTag(float chance, TagKey<@NotNull Item> tagKey, int amount, Object def) {
         List<ItemStack> list = new ArrayList<>();
         BuiltInRegistries.ITEM.getTagOrEmpty(tagKey).forEach(holder -> list.add(new ItemStack(holder.value(), amount)));
         return list.isEmpty() ? def : list;

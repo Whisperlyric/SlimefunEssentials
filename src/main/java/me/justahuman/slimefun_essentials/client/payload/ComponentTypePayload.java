@@ -7,11 +7,12 @@ import me.justahuman.slimefun_essentials.utils.Payloads;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import org.jetbrains.annotations.NotNull;
 
 public class ComponentTypePayload implements CustomPacketPayload {
     private static final ComponentTypePayload EMPTY = new ComponentTypePayload();
-    public static final CustomPacketPayload.Type<ComponentTypePayload> TYPE = Payloads.COMPONENT_TYPE_CHANNEL;
-    public static final StreamCodec<RegistryFriendlyByteBuf, ComponentTypePayload> CODEC =
+    public static final CustomPacketPayload.Type<@NotNull ComponentTypePayload> TYPE = Payloads.COMPONENT_TYPE_CHANNEL;
+    public static final StreamCodec<@NotNull RegistryFriendlyByteBuf, @NotNull ComponentTypePayload> CODEC =
             Payloads.newSplitCodec(input -> {
                 if (!ModConfig.receiveServerPayloads()) {
                     Payloads.LAST_DECODED_BYTES.remove();
@@ -25,7 +26,7 @@ public class ComponentTypePayload implements CustomPacketPayload {
             }, EMPTY);
 
     @Override
-    public Type<? extends CustomPacketPayload> type() {
+    public @NotNull Type<@NotNull ComponentTypePayload> type() {
         return TYPE;
     }
 }

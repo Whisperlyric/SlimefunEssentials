@@ -17,10 +17,11 @@ import net.minecraft.resources.Identifier;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class DataUtils {
     public static ItemStack get(ByteArrayDataInput input) {
-        final ItemStack itemStack = new ItemStack(BuiltInRegistries.ITEM.get(Identifier.tryParse(input.readUTF())).orElseThrow());
+        final ItemStack itemStack = new ItemStack(BuiltInRegistries.ITEM.get(Objects.requireNonNull(Identifier.tryParse(input.readUTF()))).orElseThrow());
         itemStack.setCount(input.readInt());
 
         try {
@@ -72,7 +73,7 @@ public class DataUtils {
 
     private static <T> DynamicOps<T> withRegistryAccess(DynamicOps<T> ops) {
         Minecraft instance = Minecraft.getInstance();
-        if (instance == null || instance.level == null) {
+        if (instance.level == null) {
             return ops;
         }
         return instance.level.registryAccess().createSerializationContext(ops);

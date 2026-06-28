@@ -13,8 +13,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(value = ItemStackHelper.class, remap = false)
 public class ItemStackHelperMixin {
     @Inject(method = "getDisplayModId(Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;", at = @At("HEAD"), cancellable = true)
-    private void slimefunEssentials$getDisplayModId(ItemStack itemStack, CallbackInfoReturnable<String> cir) {
-        final String sfId = Utils.getSlimefunId(itemStack);
+    private void slimefunEssentials$getDisplayModId(ItemStack ingredient, CallbackInfoReturnable<String> cir) {
+        final String sfId = Utils.getSlimefunId(ingredient);
         if (sfId == null) {
             return;
         }

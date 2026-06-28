@@ -46,8 +46,10 @@ public record SlimefunItemGroup(Identifier identifier, ItemStack itemStack, List
                 requirements.add(primitive.getAsString());
             }
         }
-        
-        ITEM_GROUPS.put(identifier.toString(), new SlimefunItemGroup(identifier, itemStack, content, requirements));
+
+        if (identifier != null) {
+            ITEM_GROUPS.put(identifier.toString(), new SlimefunItemGroup(identifier, itemStack, content, requirements));
+        }
     }
     
     @NonNull

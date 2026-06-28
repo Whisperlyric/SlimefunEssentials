@@ -81,6 +81,7 @@ public class ReiIntegration implements REIClientPlugin {
         }
     }
 
+    @SuppressWarnings("UnstableApiUsage")
     public static void reload() {
         Minecraft client = Minecraft.getInstance();
         client.execute(() -> {

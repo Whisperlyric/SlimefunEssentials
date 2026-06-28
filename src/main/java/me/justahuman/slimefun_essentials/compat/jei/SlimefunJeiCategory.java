@@ -19,7 +19,7 @@ import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.NotNull;
 
-public class SlimefunJeiCategory implements IRecipeCategory<SlimefunRecipe> {
+public class SlimefunJeiCategory implements IRecipeCategory<@NotNull SlimefunRecipe> {
     protected final IGuiHelper guiHelper;
     protected final RecipeCategory recipeCategory;
     protected IDrawable icon;
@@ -40,7 +40,7 @@ public class SlimefunJeiCategory implements IRecipeCategory<SlimefunRecipe> {
     }
 
     @Override
-    public @NotNull IRecipeType<SlimefunRecipe> getRecipeType() {
+    public @NotNull IRecipeType<@NotNull SlimefunRecipe> getRecipeType() {
         return IRecipeType.create(SlimefunEssentials.MOD_ID, this.recipeCategory.id().toLowerCase(), SlimefunRecipe.class);
     }
 
@@ -69,11 +69,11 @@ public class SlimefunJeiCategory implements IRecipeCategory<SlimefunRecipe> {
     }
 
     public void updateIcon() {
-        this.icon = this.guiHelper.createDrawableIngredient(VanillaTypes.ITEM_STACK, this.recipeCategory.itemStack());;
+        this.icon = this.guiHelper.createDrawableIngredient(VanillaTypes.ITEM_STACK, this.recipeCategory.itemStack());
     }
 
     @Override
-    public void setRecipe(IRecipeLayoutBuilder builder, SlimefunRecipe recipe, IFocusGroup focuses) {
+    public void setRecipe(@NotNull IRecipeLayoutBuilder builder, SlimefunRecipe recipe, @NotNull IFocusGroup focuses) {
         int xOffset = (this.background.getWidth() - recipeCategory.display().width(recipe)) / 2;
         int yOffset = (this.background.getHeight() - recipeCategory.display().height(recipe)) / 2;
 
@@ -96,7 +96,7 @@ public class SlimefunJeiCategory implements IRecipeCategory<SlimefunRecipe> {
     }
 
     @Override
-    public void draw(SlimefunRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphicsExtractor graphics, double mouseX, double mouseY) {
+    public void draw(SlimefunRecipe recipe, @NotNull IRecipeSlotsView recipeSlotsView, @NotNull GuiGraphicsExtractor graphics, double mouseX, double mouseY) {
         int xOffset = (this.background.getWidth() - recipeCategory.display().width(recipe)) / 2;
         int yOffset = (this.background.getHeight() - recipeCategory.display().height(recipe)) / 2;
 

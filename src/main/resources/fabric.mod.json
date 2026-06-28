@@ -40,6 +40,9 @@
     ],
     "rei_common": [
       "me.justahuman.slimefun_essentials.compat.rei.ReiCommonIntegration"
+    ],
+    "emi": [
+      "me.justahuman.slimefun_essentials.compat.emi.EmiIntegration"
     ]
   },
   "mixins": [
@@ -49,6 +52,13 @@
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
     "fabric-key-mapping-api-v1": "*",
-    "minecraft": "${minecraft_version_range}"
+    "minecraft": "${minecraft_version_range}",
+    "cloth-config": "*"
+  },
+  "suggests": {
+    "emi": "*",
+    "jei": "*",
+    "roughlyenoughitems": "*",
+    "jade": "*"
   }
 }

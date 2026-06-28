@@ -18,6 +18,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,18 +26,18 @@ import java.util.function.Function;
 
 public class Payloads {
     public static final String PLUGIN_ID = "slimefun_server_essentials";
-    public static final CustomPacketPayload.Type<ComponentTypePayload> COMPONENT_TYPE_CHANNEL = newChannel("component_types");
-    public static final CustomPacketPayload.Type<ItemsPayload> ITEM_CHANNEL = newChannel("items");
-    public static final CustomPacketPayload.Type<RecipeDisplayPayload> RECIPE_DISPLAY_CHANNEL = newChannel("recipe_displays");
-    public static final CustomPacketPayload.Type<RecipeCategoriesPayload> RECIPE_CATEGORIES_CHANNEL = newChannel("recipe_categories");
-    public static final CustomPacketPayload.Type<LoadingStatePayload> LOADING_STATE_CHANNEL = newChannel("loading_state");
-    public static final CustomPacketPayload.Type<ClientConfigPayload> CLIENT_CONFIG_CHANNEL = newChannel("client_config");
+    public static final CustomPacketPayload.Type<@NotNull ComponentTypePayload> COMPONENT_TYPE_CHANNEL = newChannel("component_types");
+    public static final CustomPacketPayload.Type<@NotNull ItemsPayload> ITEM_CHANNEL = newChannel("items");
+    public static final CustomPacketPayload.Type<@NotNull RecipeDisplayPayload> RECIPE_DISPLAY_CHANNEL = newChannel("recipe_displays");
+    public static final CustomPacketPayload.Type<@NotNull RecipeCategoriesPayload> RECIPE_CATEGORIES_CHANNEL = newChannel("recipe_categories");
+    public static final CustomPacketPayload.Type<@NotNull LoadingStatePayload> LOADING_STATE_CHANNEL = newChannel("loading_state");
+    public static final CustomPacketPayload.Type<@NotNull ClientConfigPayload> CLIENT_CONFIG_CHANNEL = newChannel("client_config");
 
     private static final Type RECEIVING_TOAST_TYPE = new Type("receiving_expected_packets");
     private static final Type RECEIVED_TOAST_TYPE = new Type("received_expected_packets");
 
     private static final int MAX_MESSAGE_SIZE = 32766;
-    private static final int SPLIT_MESSAGE_SIZE = MAX_MESSAGE_SIZE - 4 - 4 - 4;
+    private static final int SPLIT_MESSAGE_SIZE = MAX_MESSAGE_SIZE - 12;
     private static final Map<Class<?>, Integer> PACKET_COUNTS = new HashMap<>();
     private static final Map<Class<?>, Integer> EXPECTED_PACKETS = new HashMap<>();
     private static Runnable onMeetExpected = showToast(RECEIVED_TOAST_TYPE);
@@ -125,11 +126,11 @@ public class Payloads {
         }
     }
 
-    public static <P extends CustomPacketPayload> CustomPacketPayload.Type<P> newChannel(String channel) {
+    public static <P extends CustomPacketPayload> CustomPacketPayload.Type<@NotNull P> newChannel(String channel) {
         return new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath(PLUGIN_ID, channel));
     }
 
-    public static <P extends CustomPacketPayload>StreamCodec<RegistryFriendlyByteBuf, P> newSplitCodec(Function<ByteArrayDataInput, P> decoder, P empty) {
+    public static <P extends CustomPacketPayload>StreamCodec<@NotNull RegistryFriendlyByteBuf, @NotNull P> newSplitCodec(Function<ByteArrayDataInput, P> decoder, P empty) {
         return new StreamCodec<>() {
             private final Map<Integer, byte[][]> received = new HashMap<>();
 
@@ -194,7 +195,7 @@ public class Payloads {
      */
     public static final ThreadLocal<byte[]> LAST_DECODED_BYTES = new ThreadLocal<>();
 
-    public static <P extends CustomPacketPayload>StreamCodec<RegistryFriendlyByteBuf, P> newCodec(Function<ByteArrayDataInput, P> decoder) {
+    public static <P extends CustomPacketPayload>StreamCodec<@NotNull RegistryFriendlyByteBuf, @NotNull P> newCodec(Function<ByteArrayDataInput, P> decoder) {
         return StreamCodec.of((value, buf) -> {}, buf -> {
             byte[] bytes = new byte[buf.readableBytes()];
             for (int i = 0; i < bytes.length; i++) {

@@ -111,7 +111,7 @@ public interface IdInterpreter<T> {
         }
     }
     
-    T fromTag(float chance, TagKey<Item> tagKey, int amount, T def);
+    T fromTag(float chance, TagKey<@NotNull Item> tagKey, int amount, T def);
     T fromItemStack(float chance, ItemStack itemStack, int amount, T def);
     T fromFluid(float chance, FluidVariant fluid, int amount, T def);
     T fromEntityType(float chance, EntityType<?> entityType, boolean baby, int amount, T def);

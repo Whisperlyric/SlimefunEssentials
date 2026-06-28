@@ -20,6 +20,7 @@ public class ConfigScreen {
 
         /* General Config Options */
 
+        //noinspection UnstableApiUsage — cloth-config's Requirement API is @ApiStatus.Experimental but stable in practice
         generalCategory.addEntry(entryBuilder.startBooleanToggle(Component.translatable("slimefun_essentials.config.option.block_features"), ModConfig.blockFeatures())
                 .setDefaultValue(true)
                 .setTooltip(Component.translatable("slimefun_essentials.config.option.block_features.tooltip"))
@@ -27,6 +28,7 @@ public class ConfigScreen {
                 .setSaveConsumer(ModConfig::setBlockFeatures)
                 .build());
 
+        //noinspection UnstableApiUsage — see above
         generalCategory.addEntry(entryBuilder.startBooleanToggle(Component.translatable("slimefun_essentials.config.option.recipe_features"), ModConfig.recipeFeatures())
                 .setDefaultValue(true)
                 .setTooltip(Component.translatable("slimefun_essentials.config.option.recipe_features.tooltip"))

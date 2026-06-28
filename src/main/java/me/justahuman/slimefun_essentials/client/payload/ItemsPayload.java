@@ -10,14 +10,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class ItemsPayload implements CustomPacketPayload {
     public static final ItemsPayload EMPTY = new ItemsPayload();
-    public static final CustomPacketPayload.Type<ItemsPayload> TYPE = Payloads.ITEM_CHANNEL;
-    public static final StreamCodec<RegistryFriendlyByteBuf, ItemsPayload> CODEC =
+    public static final CustomPacketPayload.Type<@NotNull ItemsPayload> TYPE = Payloads.ITEM_CHANNEL;
+    public static final StreamCodec<@NotNull RegistryFriendlyByteBuf, @NotNull ItemsPayload> CODEC =
             Payloads.newSplitCodec(input -> {
                 if (!ModConfig.receiveServerPayloads()) {
                     Payloads.LAST_DECODED_BYTES.remove();
@@ -41,7 +42,7 @@ public class ItemsPayload implements CustomPacketPayload {
             }, EMPTY);
 
     @Override
-    public Type<? extends CustomPacketPayload> type() {
+    public @NotNull Type<@NotNull ItemsPayload> type() {
         return TYPE;
     }
 }

@@ -89,7 +89,10 @@ public class ModConfig {
         final File configFile = FabricLoader.getInstance().getConfigDir().resolve("slimefun_essentials.json").toFile();
         if (!configFile.exists()) {
             try {
-                configFile.getParentFile().mkdirs();
+                final File parent = configFile.getParentFile();
+                if (!parent.isDirectory() && !parent.mkdirs()) {
+                    throw new IOException("Failed to create config directory: " + parent);
+                }
                 if (!configFile.createNewFile()) {
                     throw new IOException();
                 }

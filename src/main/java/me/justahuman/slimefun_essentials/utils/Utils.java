@@ -69,10 +69,10 @@ public class Utils {
 
     public static String getSlimefunId(@Nullable DataComponentMap components) {
         final CompoundTag pluginNbt = getPluginNbt(components);
-        if (pluginNbt == null || !pluginNbt.contains("slimefun:slimefun_item")) {
+        if (pluginNbt == null) {
             return null;
         }
-        return pluginNbt.getStringOr("slimefun:slimefun_item", null);
+        return pluginNbt.getString("slimefun:slimefun_item").orElse(null);
     }
 
     public static String getGuideMode(@Nullable ItemStack itemStack) {
@@ -81,10 +81,10 @@ public class Utils {
 
     public static String getGuideMode(@Nullable DataComponentMap components) {
         final CompoundTag pluginNbt = getPluginNbt(components);
-        if (pluginNbt == null || !pluginNbt.contains("slimefun:slimefun_guide_mode")) {
+        if (pluginNbt == null) {
             return null;
         }
-        return pluginNbt.getStringOr("slimefun:slimefun_guide_mode", null);
+        return pluginNbt.getString("slimefun:slimefun_guide_mode").orElse(null);
     }
 
     public static String fillPlaceholders(String string, SlimefunRecipe recipe) {

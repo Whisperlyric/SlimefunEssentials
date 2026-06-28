@@ -43,6 +43,9 @@ dependencies {
         exclude(group: "mezz.jei")
     }
 
+    // EMI (link-fgfgui fork for 26.1.2) - optional compat, compileOnly
+    compileOnly files("libs/emi-xplat-dev.jar")
+
     runtimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}")
     compileOnly("me.shedaniel:RoughlyEnoughItems-runtime-fabric:${rei_version}") {
         exclude(group: "net.fabricmc.fabric-api")
