@@ -1,5 +1,5 @@
 {
-  "slimefun_essentials.title": "Slimefun Essentials (SFE)",
+  "key.category.slimefun_essentials.key.category": "Slimefun Essentials (SFE)",
 
   "slimefun_essentials.toast.receiving_expected_packets": "正在接收 SFE 数据包",
   "slimefun_essentials.toast.receiving_expected_packets.description": "%s/%s, %s/%s, %s/%s, %s/%s",
