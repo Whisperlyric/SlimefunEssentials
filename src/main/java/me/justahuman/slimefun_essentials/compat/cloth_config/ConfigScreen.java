@@ -20,6 +20,13 @@ public class ConfigScreen {
 
         /* General Config Options */
 
+        generalCategory.addEntry(entryBuilder.startBooleanToggle(Component.translatable("slimefun_essentials.config.option.block_features"), ModConfig.blockFeatures())
+                .setDefaultValue(true)
+                .setTooltip(Component.translatable("slimefun_essentials.config.option.block_features.tooltip"))
+                .setRequirement(CompatUtils::isBlockFeatureModLoaded)
+                .setSaveConsumer(ModConfig::setBlockFeatures)
+                .build());
+
         generalCategory.addEntry(entryBuilder.startBooleanToggle(Component.translatable("slimefun_essentials.config.option.recipe_features"), ModConfig.recipeFeatures())
                 .setDefaultValue(true)
                 .setTooltip(Component.translatable("slimefun_essentials.config.option.recipe_features.tooltip"))
@@ -31,6 +38,12 @@ public class ConfigScreen {
                 .setDefaultValue(true)
                 .setTooltip(Component.translatable("slimefun_essentials.config.option.resource_pack_features.tooltip"))
                 .setSaveConsumer(ModConfig::setResourcePackFeatures)
+                .build());
+
+        generalCategory.addEntry(entryBuilder.startBooleanToggle(Component.translatable("slimefun_essentials.config.option.receive_server_payloads"), ModConfig.receiveServerPayloads())
+                .setDefaultValue(true)
+                .setTooltip(Component.translatable("slimefun_essentials.config.option.receive_server_payloads.tooltip"))
+                .setSaveConsumer(ModConfig::setReceiveServerPayloads)
                 .build());
 
         /* Visual */

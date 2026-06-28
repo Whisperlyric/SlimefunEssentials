@@ -11,6 +11,9 @@
   "slimefun_essentials.config.option.resource_pack_features": "啟用資源包支援",
   "slimefun_essentials.config.option.resource_pack_features.tooltip": "-> 從資源包載入粘液科技物品和自訂模型",
 
+  "slimefun_essentials.config.option.receive_server_payloads": "接收伺服器資料傳輸",
+  "slimefun_essentials.config.option.receive_server_payloads.tooltip": "-> 開啟後登入伺服器時接收物品/配方等資料並快取\n-> 關閉後使用本地快取，零流量消耗\n-> 首次關閉前需至少登入一次以產生快取",
+
   "slimefun_essentials.config.option.auto_toggle_addons": "自動啟用附屬插件",
   "slimefun_essentials.config.option.auto_toggle_addons.tooltip": "是否自動啟用/停用附屬插件的支援？",
   "slimefun_essentials.config.option.addons": "啟用的粘液科技附屬插件支援：",

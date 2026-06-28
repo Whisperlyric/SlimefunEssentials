@@ -12,11 +12,16 @@
 
   "slimefun_essentials.key_bind.open_config": "Open Config",
   "slimefun_essentials.config.category.general": "General",
+  "slimefun_essentials.config.option.block_features": "Enable Block Features",
+  "slimefun_essentials.config.option.block_features.tooltip": "-> Enables MBP extension\n-> Enables Jade compatibility",
   "slimefun_essentials.config.option.recipe_features": "Enable Recipe Features",
   "slimefun_essentials.config.option.recipe_features.tooltip": "-> Enables Jei, Rei, & Emi compatibility",
 
   "slimefun_essentials.config.option.resource_pack_features": "Enable Resource Pack Features",
   "slimefun_essentials.config.option.resource_pack_features.tooltip": "-> Loads Slimefun items and custom models from resource packs",
+
+  "slimefun_essentials.config.option.receive_server_payloads": "Receive Server Payloads",
+  "slimefun_essentials.config.option.receive_server_payloads.tooltip": "-> When enabled, receives items/recipes from server and caches them\n-> When disabled, uses local cache with zero network traffic\n-> Requires at least one login to generate cache before disabling",
 
   "slimefun_essentials.config.category.visual": "Visual",
   "slimefun_essentials.config.option.replace_item_identifiers": "Replace Item Ids",
