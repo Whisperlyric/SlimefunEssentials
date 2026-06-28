@@ -1,31 +1,44 @@
 {
   "slimefun_essentials.title": "Slimefun Essentials (SFE)",
 
-  "slimefun_essentials.toast.receiving_expected_packets": "Receiving SFE Packets",
+  "slimefun_essentials.toast.receiving_expected_packets": "正在接收 SFE 資料封包",
   "slimefun_essentials.toast.receiving_expected_packets.description": "%s/%s, %s/%s, %s/%s, %s/%s",
-  "slimefun_essentials.toast.received_expected_packets": "Received SFE Packets",
-  "slimefun_essentials.toast.received_expected_packets.description": "Reloading recipe viewer...",
-  "slimefun_essentials.toast.received_unexpected_packets": "Received unexpected packets",
-  "slimefun_essentials.toast.received_unexpected_packets.description": "SFE will not load!",
+  "slimefun_essentials.toast.received_expected_packets": "已接收 SFE 資料封包",
+  "slimefun_essentials.toast.received_expected_packets.description": "正在重新載入配方檢視器……",
+  "slimefun_essentials.toast.received_unexpected_packets": "收到意外資料封包",
+  "slimefun_essentials.toast.received_unexpected_packets.description": "SFE 將不會載入！",
 
-  "slimefun_essentials.reloading": "Reloading...",
+  "slimefun_essentials.reloading": "正在重新載入……",
 
-  "slimefun_essentials.key_bind.open_config": "Open Config",
-  "slimefun_essentials.config.category.general": "General",
-  "slimefun_essentials.config.option.block_features": "Enable Block Features",
-  "slimefun_essentials.config.option.block_features.tooltip": "-> Enables MBP extension\n-> Enables Jade compatibility",
-  "slimefun_essentials.config.option.recipe_features": "Enable Recipe Features",
-  "slimefun_essentials.config.option.recipe_features.tooltip": "-> Enables Jei, Rei, & Emi compatibility",
+  "slimefun_essentials.key_bind.open_config": "打開設定",
 
-  "slimefun_essentials.config.option.resource_pack_features": "Enable Resource Pack Features",
-  "slimefun_essentials.config.option.resource_pack_features.tooltip": "-> Loads Slimefun items and custom models from resource packs",
+  "slimefun_essentials.config.category.general": "一般",
+  "slimefun_essentials.config.option.block_features": "啟用方塊特性",
+  "slimefun_essentials.config.option.block_features.tooltip": "-> 啟用 MBP 擴充\n-> 啟用 Jade 相容",
+  "slimefun_essentials.config.option.recipe_features": "啟用配方特性",
+  "slimefun_essentials.config.option.recipe_features.tooltip": "-> 啟用 JEI、REI 和 EMI 相容",
 
-  "slimefun_essentials.config.option.receive_server_payloads": "Receive Server Payloads",
-  "slimefun_essentials.config.option.receive_server_payloads.tooltip": "-> When enabled, receives items/recipes from server and caches them\n-> When disabled, uses local cache with zero network traffic\n-> Requires at least one login to generate cache before disabling",
+  "slimefun_essentials.config.option.resource_pack_features": "啟用資源包支援",
+  "slimefun_essentials.config.option.resource_pack_features.tooltip": "-> 從資源包載入粘液科技物品和自訂模型",
 
-  "slimefun_essentials.config.category.visual": "Visual",
-  "slimefun_essentials.config.option.replace_item_identifiers": "Replace Item Ids",
-  "slimefun_essentials.config.option.replace_item_identifiers.tooltip": "E.g. \"minecraft:gunpowder\" -> \"slimefun:pure_ore_cluster\"",
-  "slimefun_essentials.config.option.hide_background_tooltips": "Hide Background Tooltips",
-  "slimefun_essentials.config.option.hide_background_tooltips.tooltip": "Hides the tooltip of items meant just as background/filler\nE.g. the grey glass panes in the Slimefun guide."
+  "slimefun_essentials.config.option.receive_server_payloads": "接收伺服器資料傳輸",
+  "slimefun_essentials.config.option.receive_server_payloads.tooltip": "-> 開啟後登入伺服器時接收物品/配方等資料並快取\n-> 關閉後使用本地快取，零流量消耗\n-> 首次關閉前需至少登入一次以產生快取",
+
+  "slimefun_essentials.config.category.visual": "視覺",
+  "slimefun_essentials.config.option.replace_item_identifiers": "替換物品識別碼",
+  "slimefun_essentials.config.option.replace_item_identifiers.tooltip": "例如 \"minecraft:gunpowder\" -> \"slimefun:pure_ore_cluster\"",
+  "slimefun_essentials.config.option.hide_background_tooltips": "隱藏背景工具提示",
+  "slimefun_essentials.config.option.hide_background_tooltips.tooltip": "隱藏僅作為背景/填充物的物品的工具提示\n例如粘液科技指南中的灰色玻璃片。",
+
+  "slimefun_essentials.config.option.auto_toggle_addons": "自動啟用附屬插件",
+  "slimefun_essentials.config.option.auto_toggle_addons.tooltip": "是否自動啟用/停用附屬插件的支援？",
+  "slimefun_essentials.config.option.addons": "啟用的粘液科技附屬插件支援：",
+  "slimefun_essentials.config.option.addons.tooltip": "新增/移除您想要支援的附屬插件",
+
+  "slimefun_essentials.recipes.category.slimefun": "%s",
+  "slimefun_essentials.recipes.time": "%s 秒 (%s 刻)",
+  "slimefun_essentials.recipes.energy.use": "使用 %sJ",
+  "slimefun_essentials.recipes.energy.generate": "產生 %sJ",
+  "slimefun_essentials.recipes.label.day": "您必須在白天才能使用此方塊合成該物品！",
+  "slimefun_essentials.recipes.label.night": "您必須在夜晚才能使用此方塊合成該物品！"
 }

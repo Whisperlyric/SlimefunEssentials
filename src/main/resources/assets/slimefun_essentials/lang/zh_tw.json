@@ -1,18 +1,34 @@
 {
-  "slimefun_essentials.title": "Slimefun Essentials",
+  "slimefun_essentials.title": "Slimefun Essentials (SFE)",
+
+  "slimefun_essentials.toast.receiving_expected_packets": "正在接收 SFE 資料封包",
+  "slimefun_essentials.toast.receiving_expected_packets.description": "%s/%s, %s/%s, %s/%s, %s/%s",
+  "slimefun_essentials.toast.received_expected_packets": "已接收 SFE 資料封包",
+  "slimefun_essentials.toast.received_expected_packets.description": "正在重新載入配方檢視器……",
+  "slimefun_essentials.toast.received_unexpected_packets": "收到意外資料封包",
+  "slimefun_essentials.toast.received_unexpected_packets.description": "SFE 將不會載入！",
+
+  "slimefun_essentials.reloading": "正在重新載入……",
 
   "slimefun_essentials.key_bind.open_config": "打開設定",
 
-  "slimefun_essentials.config.option.block_features": "啟用粘液科技方塊材質",
-  "slimefun_essentials.config.option.block_features.tooltip": "-> 啟用 MBP 拓展\n-> 啟用 Jade 拓展",
-  "slimefun_essentials.config.option.recipe_features": "啟用粘液科技配方",
-  "slimefun_essentials.config.option.recipe_features.tooltip": "-> 啟用 Jade 拓展\n-> 啟用 REI 拓展\n-> 啟用 EMI 拓展",
+  "slimefun_essentials.config.category.general": "一般",
+  "slimefun_essentials.config.option.block_features": "啟用方塊特性",
+  "slimefun_essentials.config.option.block_features.tooltip": "-> 啟用 MBP 擴充\n-> 啟用 Jade 相容",
+  "slimefun_essentials.config.option.recipe_features": "啟用配方特性",
+  "slimefun_essentials.config.option.recipe_features.tooltip": "-> 啟用 JEI、REI 和 EMI 相容",
 
   "slimefun_essentials.config.option.resource_pack_features": "啟用資源包支援",
   "slimefun_essentials.config.option.resource_pack_features.tooltip": "-> 從資源包載入粘液科技物品和自訂模型",
 
   "slimefun_essentials.config.option.receive_server_payloads": "接收伺服器資料傳輸",
   "slimefun_essentials.config.option.receive_server_payloads.tooltip": "-> 開啟後登入伺服器時接收物品/配方等資料並快取\n-> 關閉後使用本地快取，零流量消耗\n-> 首次關閉前需至少登入一次以產生快取",
+
+  "slimefun_essentials.config.category.visual": "視覺",
+  "slimefun_essentials.config.option.replace_item_identifiers": "替換物品識別碼",
+  "slimefun_essentials.config.option.replace_item_identifiers.tooltip": "例如 \"minecraft:gunpowder\" -> \"slimefun:pure_ore_cluster\"",
+  "slimefun_essentials.config.option.hide_background_tooltips": "隱藏背景工具提示",
+  "slimefun_essentials.config.option.hide_background_tooltips.tooltip": "隱藏僅作為背景/填充物的物品的工具提示\n例如粘液科技指南中的灰色玻璃片。",
 
   "slimefun_essentials.config.option.auto_toggle_addons": "自動啟用附屬插件",
   "slimefun_essentials.config.option.auto_toggle_addons.tooltip": "是否自動啟用/停用附屬插件的支援？",
